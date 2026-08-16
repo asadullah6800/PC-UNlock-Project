@@ -31,7 +31,9 @@ int MobileUnlockService::Run(int argc, wchar_t* argv[]) {
         if (arg1 == L"-console" || arg1 == L"--console") {
             std::wcout << L"Starting MobileUnlockService in Console Mode..." << std::endl;
             if (StartServiceComponents()) {
-                std::wcout << L"Service running. Press ENTER to exit." << std::endl;
+                std::wcout << L"Service running on Port " << m_configManager.GetConfig().WifiPort
+                           << L" with mDNS on Port " << m_configManager.GetConfig().MdnsPort
+                           << L". Press ENTER to exit." << std::endl;
                 std::cin.get();
                 StopServiceComponents();
             }
@@ -130,6 +132,7 @@ bool MobileUnlockService::StartServiceComponents() {
 
     const auto& config = m_configManager.GetConfig();
 
+    // 1. Start Secure IPC Server
     m_ipcServer = std::unique_ptr<IPC::NamedPipeServer>(
         new IPC::NamedPipeServer(config.ServicePipeName)
     );
@@ -143,7 +146,36 @@ bool MobileUnlockService::StartServiceComponents() {
         return false;
     }
 
-    m_diagnosticManager.SetServiceStatus(Diagnostics::ComponentStatus::OK, L"Service started successfully");
+    // 2. Start NetworkEngine (TCP / TLS 1.3 server)
+    m_networkEngine = std::unique_ptr<Network::NetworkEngine>(
+        new Network::NetworkEngine(config.WifiPort)
+    );
+
+    if (!m_networkEngine->Start([this](uint64_t clientId, const Protocol::FrameHeader& header, const std::vector<uint8_t>& payload) {
+        HandleNetworkFrame(clientId, header, payload);
+    })) {
+        Logging::SecurityAuditLogger::GetInstance().LogSecurityEvent(
+            Logging::EventId::SERVICE_FAULT,
+            Logging::LogLevel::Error,
+            L"Failed to start NetworkEngine TCP/TLS Server."
+        );
+        return false;
+    }
+
+    // 3. Start mDNS Responder
+    m_mdnsResponder = std::unique_ptr<Network::MdnsResponder>(
+        new Network::MdnsResponder(config.MdnsPort, config.WifiPort)
+    );
+
+    if (!m_mdnsResponder->Start(Protocol::PcState::ONLINE)) {
+        Logging::SecurityAuditLogger::GetInstance().LogSecurityEvent(
+            Logging::EventId::SERVICE_FAULT,
+            Logging::LogLevel::Warning,
+            L"Failed to start mDNS Responder (UDP port may be occupied)."
+        );
+    }
+
+    m_diagnosticManager.SetServiceStatus(Diagnostics::ComponentStatus::OK, L"Service, TCP/TLS Server, and mDNS active");
     m_diagnosticManager.SetIpcStatus(Diagnostics::ComponentStatus::OK, L"IPC Server active");
     SetState(Protocol::PcState::ONLINE);
 
@@ -159,6 +191,16 @@ bool MobileUnlockService::StartServiceComponents() {
 
 void MobileUnlockService::StopServiceComponents() {
     if (!m_isRunning.load()) return;
+
+    if (m_mdnsResponder) {
+        m_mdnsResponder->Stop();
+        m_mdnsResponder.reset();
+    }
+
+    if (m_networkEngine) {
+        m_networkEngine->Stop();
+        m_networkEngine.reset();
+    }
 
     if (m_ipcServer) {
         m_ipcServer->Stop();
@@ -178,6 +220,9 @@ void MobileUnlockService::StopServiceComponents() {
 
 void MobileUnlockService::SetState(Protocol::PcState state) {
     m_currentState.store(state);
+    if (m_mdnsResponder) {
+        m_mdnsResponder->SetState(state);
+    }
 }
 
 void MobileUnlockService::HandleIpcMessage(const std::vector<uint8_t>& message) {
@@ -203,6 +248,20 @@ void MobileUnlockService::HandleIpcMessage(const std::vector<uint8_t>& message) 
 
         auto responseBuf = Protocol::SerializeFrameHeader(pongHeader);
         m_ipcServer->SendMessageToClient(responseBuf);
+    }
+}
+
+void MobileUnlockService::HandleNetworkFrame(uint64_t clientId, const Protocol::FrameHeader& header, const std::vector<uint8_t>& /*payload*/) {
+    m_diagnosticManager.IncrementProcessedMessages();
+
+    if (header.MessageType == static_cast<uint16_t>(Protocol::MessageType::PING)) {
+        Protocol::FrameHeader pongHeader;
+        pongHeader.MessageType    = static_cast<uint16_t>(Protocol::MessageType::PONG);
+        pongHeader.MessageID      = header.MessageID;
+        pongHeader.SequenceNumber = header.SequenceNumber + 1;
+        pongHeader.PayloadLength  = 0;
+
+        m_networkEngine->SendFrame(clientId, pongHeader, {});
     }
 }
 

@@ -12,18 +12,28 @@ CMakeFiles/MobileUnlockService.dir/windows/service/MobileUnlockService.cpp.obj: 
   c:/mingw/include/io.h \
   c:/mingw/include/locale.h \
   c:/mingw/include/msvcrtver.h \
+  c:/mingw/include/nspapi.h \
+  c:/mingw/include/ntsecapi.h \
+  c:/mingw/include/ntsecpkg.h \
   c:/mingw/include/poppack.h \
   c:/mingw/include/process.h \
   c:/mingw/include/pshpack4.h \
+  c:/mingw/include/schannel.h \
   c:/mingw/include/sddl.h \
   c:/mingw/include/sdkddkver.h \
+  c:/mingw/include/secext.h \
+  c:/mingw/include/security.h \
+  c:/mingw/include/sspi.h \
   c:/mingw/include/stdint.h \
   c:/mingw/include/stdio.h \
   c:/mingw/include/stdlib.h \
   c:/mingw/include/string.h \
   c:/mingw/include/strings.h \
+  c:/mingw/include/subauth.h \
   c:/mingw/include/sys/stat.h \
   c:/mingw/include/sys/types.h \
+  c:/mingw/include/sys/bsdtypes.h \
+  c:/mingw/include/sys/time.h \
   c:/mingw/include/sys/types.h \
   c:/mingw/include/time.h \
   c:/mingw/include/w32api.h \
@@ -31,6 +41,7 @@ CMakeFiles/MobileUnlockService.dir/windows/service/MobileUnlockService.cpp.obj: 
   c:/mingw/include/wctype.h \
   c:/mingw/include/winbase.h \
   c:/mingw/include/wincon.h \
+  c:/mingw/include/wincrypt.h \
   c:/mingw/include/windef.h \
   c:/mingw/include/windows.h \
   c:/mingw/include/winerror.h \
@@ -39,9 +50,13 @@ CMakeFiles/MobileUnlockService.dir/windows/service/MobileUnlockService.cpp.obj: 
   c:/mingw/include/winnls.h \
   c:/mingw/include/winnt.h \
   c:/mingw/include/winreg.h \
+  c:/mingw/include/winsock.h \
+  c:/mingw/include/winsock2.h \
   c:/mingw/include/winsvc.h \
   c:/mingw/include/winuser.h \
   c:/mingw/include/winver.h \
+  c:/mingw/include/ws2tcpip.h \
+  c:/mingw/include/wtypes.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/array \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/atomic \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/backward/auto_ptr.h \
@@ -64,6 +79,8 @@ CMakeFiles/MobileUnlockService.dir/windows/service/MobileUnlockService.cpp.obj: 
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/ios_base.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/istream.tcc \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.h \
@@ -84,6 +101,7 @@ CMakeFiles/MobileUnlockService.dir/windows/service/MobileUnlockService.cpp.obj: 
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_atomic.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_base.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/std_mutex.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h \
@@ -101,6 +119,7 @@ CMakeFiles/MobileUnlockService.dir/windows/service/MobileUnlockService.cpp.obj: 
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf_iterator.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/unique_ptr.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/vector.tcc \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cctype \
@@ -145,6 +164,7 @@ CMakeFiles/MobileUnlockService.dir/windows/service/MobileUnlockService.cpp.obj: 
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mutex \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/new \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ostream \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ratio \
@@ -155,6 +175,7 @@ CMakeFiles/MobileUnlockService.dir/windows/service/MobileUnlockService.cpp.obj: 
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/tuple \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/typeinfo \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/unordered_map \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/utility \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/vector \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/stdarg.h \
@@ -165,7 +186,10 @@ CMakeFiles/MobileUnlockService.dir/windows/service/MobileUnlockService.cpp.obj: 
   c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/configuration/configurationmanager.h \
   c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/diagnostics/diagnosticmanager.h \
   c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/ipc/secureipc.h \
-  c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/logging/securityauditlogger.h
+  c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/logging/securityauditlogger.h \
+  c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/network/TlsContext.h \
+  c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/network/mdnsresponder.h \
+  c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/network/networkengine.h
 
 CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/service/main.cpp \
   C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/service/MobileUnlockService.h \
@@ -180,6 +204,9 @@ CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: C:/Users/AsadU/
   c:/mingw/include/io.h \
   c:/mingw/include/locale.h \
   c:/mingw/include/msvcrtver.h \
+  c:/mingw/include/nspapi.h \
+  c:/mingw/include/ntsecapi.h \
+  c:/mingw/include/ntsecpkg.h \
   c:/mingw/include/objbase.h \
   c:/mingw/include/objfwd.h \
   c:/mingw/include/objidl.h \
@@ -194,16 +221,23 @@ CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: C:/Users/AsadU/
   c:/mingw/include/rpcnsi.h \
   c:/mingw/include/rpcnsip.h \
   c:/mingw/include/rpcnterr.h \
+  c:/mingw/include/schannel.h \
   c:/mingw/include/sddl.h \
   c:/mingw/include/sdkddkver.h \
+  c:/mingw/include/secext.h \
+  c:/mingw/include/security.h \
   c:/mingw/include/shellapi.h \
+  c:/mingw/include/sspi.h \
   c:/mingw/include/stdint.h \
   c:/mingw/include/stdio.h \
   c:/mingw/include/stdlib.h \
   c:/mingw/include/string.h \
   c:/mingw/include/strings.h \
+  c:/mingw/include/subauth.h \
   c:/mingw/include/sys/stat.h \
   c:/mingw/include/sys/types.h \
+  c:/mingw/include/sys/bsdtypes.h \
+  c:/mingw/include/sys/time.h \
   c:/mingw/include/sys/types.h \
   c:/mingw/include/time.h \
   c:/mingw/include/unknwn.h \
@@ -212,6 +246,7 @@ CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: C:/Users/AsadU/
   c:/mingw/include/wctype.h \
   c:/mingw/include/winbase.h \
   c:/mingw/include/wincon.h \
+  c:/mingw/include/wincrypt.h \
   c:/mingw/include/windef.h \
   c:/mingw/include/windows.h \
   c:/mingw/include/winerror.h \
@@ -220,9 +255,12 @@ CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: C:/Users/AsadU/
   c:/mingw/include/winnls.h \
   c:/mingw/include/winnt.h \
   c:/mingw/include/winreg.h \
+  c:/mingw/include/winsock.h \
+  c:/mingw/include/winsock2.h \
   c:/mingw/include/winsvc.h \
   c:/mingw/include/winuser.h \
   c:/mingw/include/winver.h \
+  c:/mingw/include/ws2tcpip.h \
   c:/mingw/include/wtypes.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/array \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/atomic \
@@ -244,6 +282,8 @@ CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: C:/Users/AsadU/
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/localefwd.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/memoryfwd.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/move.h \
@@ -257,6 +297,7 @@ CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: C:/Users/AsadU/
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_atomic.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_base.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/std_mutex.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h \
@@ -272,6 +313,7 @@ CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: C:/Users/AsadU/
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_vector.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/unique_ptr.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/vector.tcc \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cctype \
@@ -306,17 +348,21 @@ CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: C:/Users/AsadU/
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++config.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++locale.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/cpu_defines.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/error_constants.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/os_defines.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mutex \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/new \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ratio \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/stdexcept \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/stdlib.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/string \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/system_error \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/tuple \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/typeinfo \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/unordered_map \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/utility \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/vector \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/stdarg.h \
@@ -327,7 +373,10 @@ CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: C:/Users/AsadU/
   c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/configuration/configurationmanager.h \
   c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/diagnostics/diagnosticmanager.h \
   c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/ipc/secureipc.h \
-  c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/logging/securityauditlogger.h
+  c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/logging/securityauditlogger.h \
+  c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/network/TlsContext.h \
+  c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/network/mdnsresponder.h \
+  c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/network/networkengine.h
 
 
 C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/service/MobileUnlockService.cpp:
@@ -338,7 +387,11 @@ c:/mingw/include/winnetwk.h:
 
 c:/mingw/include/ctype.h:
 
+c:/mingw/include/wtypes.h:
+
 c:/mingw/include/wctype.h:
+
+c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/network/mdnsresponder.h:
 
 c:/mingw/include/errno.h:
 
@@ -360,13 +413,15 @@ c:/mingw/include/basetsd.h:
 
 c:/mingw/include/io.h:
 
+c:/mingw/include/winsock2.h:
+
 c:/mingw/include/dbt.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h:
+c:/mingw/include/winsock.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/exception:
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h:
+c:/mingw/include/sys/bsdtypes.h:
 
 c:/mingw/include/direct.h:
 
@@ -377,6 +432,14 @@ c:/mingw/include/winsvc.h:
 c:/mingw/include/wingdi.h:
 
 c:/mingw/include/msvcrtver.h:
+
+c:/mingw/include/sddl.h:
+
+c:/mingw/include/nspapi.h:
+
+c:/mingw/include/ntsecapi.h:
+
+c:/mingw/include/ntsecpkg.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_base.h:
 
@@ -402,23 +465,15 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h:
 
 c:/mingw/include/pshpack4.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/error_constants.h:
+c:/mingw/include/winerror.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h:
-
-c:/mingw/include/sddl.h:
+c:/mingw/include/schannel.h:
 
 c:/mingw/include/sdkddkver.h:
 
-c:/mingw/include/stdio.h:
+c:/mingw/include/secext.h:
 
-c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/logging/securityauditlogger.h:
-
-c:/mingw/include/stdlib.h:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_ios.tcc:
+c:/mingw/include/security.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/parse_numbers.h:
 
@@ -428,7 +483,23 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ext/concurrence.h:
 
 c:/mingw/include/string.h:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/debug/debug.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_ios.tcc:
+
+c:/mingw/include/sspi.h:
+
+c:/mingw/include/sys/time.h:
+
+c:/mingw/include/stdio.h:
+
+c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/logging/securityauditlogger.h:
+
+c:/mingw/include/stdlib.h:
+
 c:/mingw/include/strings.h:
+
+c:/mingw/include/subauth.h:
 
 c:/mingw/include/sys/stat.h:
 
@@ -438,25 +509,21 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/streambuf:
 
 c:/mingw/include/time.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h:
-
 c:/mingw/include/winbase.h:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/typeinfo:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/istream.tcc:
 
 c:/mingw/include/wincon.h:
 
-c:/mingw/include/windef.h:
-
-c:/mingw/include/winerror.h:
-
 c:/mingw/include/winnt.h:
+
+c:/mingw/include/wincrypt.h:
+
+c:/mingw/include/windef.h:
 
 c:/mingw/include/winuser.h:
 
 c:/mingw/include/winver.h:
+
+c:/mingw/include/ws2tcpip.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/array:
 
@@ -466,8 +533,6 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.tcc:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc:
-
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/allocated_ptr.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h:
@@ -476,11 +541,25 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_ios.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h:
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/error_constants.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/exception:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/cpp_type_traits.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/ios_base.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h:
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/cxxabi_forced.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h:
 
@@ -491,6 +570,14 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h:
 c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/ipc/secureipc.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/typeinfo:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/istream.tcc:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.h:
 
@@ -530,9 +617,9 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_atomic.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_base.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h:
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/std_mutex.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h:
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h:
 
@@ -558,9 +645,13 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf.tcc:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf_iterator.h:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/unordered_map:
+
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/unique_ptr.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h:
 
@@ -604,6 +695,8 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/functional:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mutex:
+
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/initializer_list:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ios:
@@ -642,6 +735,8 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/string:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/tuple:
 
+c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/network/TlsContext.h:
+
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/type_traits:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/vector:
@@ -657,6 +752,8 @@ c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/shared/protocol/protocolty
 c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/configuration/configurationmanager.h:
 
 c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/diagnostics/diagnosticmanager.h:
+
+c:/users/asadu/drive_0/pc\ unlock/pc\ unlock\ project/windows/network/networkengine.h:
 
 C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/service/main.cpp:
 
@@ -689,7 +786,5 @@ c:/mingw/include/rpcnterr.h:
 c:/mingw/include/shellapi.h:
 
 c:/mingw/include/unknwn.h:
-
-c:/mingw/include/wtypes.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/stdlib.h:

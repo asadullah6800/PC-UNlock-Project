@@ -344,6 +344,174 @@ windows/logging/SecurityAuditLogger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/logging/SecurityAuditLogger.cpp.s
 .PHONY : windows/logging/SecurityAuditLogger.cpp.s
 
+windows/network/MdnsResponder.obj: windows/network/MdnsResponder.cpp.obj
+.PHONY : windows/network/MdnsResponder.obj
+
+# target to build an object file
+windows/network/MdnsResponder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj
+.PHONY : windows/network/MdnsResponder.cpp.obj
+
+windows/network/MdnsResponder.i: windows/network/MdnsResponder.cpp.i
+.PHONY : windows/network/MdnsResponder.i
+
+# target to preprocess a source file
+windows/network/MdnsResponder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.i
+.PHONY : windows/network/MdnsResponder.cpp.i
+
+windows/network/MdnsResponder.s: windows/network/MdnsResponder.cpp.s
+.PHONY : windows/network/MdnsResponder.s
+
+# target to generate assembly for a file
+windows/network/MdnsResponder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.s
+.PHONY : windows/network/MdnsResponder.cpp.s
+
+windows/network/NetworkEngine.obj: windows/network/NetworkEngine.cpp.obj
+.PHONY : windows/network/NetworkEngine.obj
+
+# target to build an object file
+windows/network/NetworkEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.obj
+.PHONY : windows/network/NetworkEngine.cpp.obj
+
+windows/network/NetworkEngine.i: windows/network/NetworkEngine.cpp.i
+.PHONY : windows/network/NetworkEngine.i
+
+# target to preprocess a source file
+windows/network/NetworkEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.i
+.PHONY : windows/network/NetworkEngine.cpp.i
+
+windows/network/NetworkEngine.s: windows/network/NetworkEngine.cpp.s
+.PHONY : windows/network/NetworkEngine.s
+
+# target to generate assembly for a file
+windows/network/NetworkEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.s
+.PHONY : windows/network/NetworkEngine.cpp.s
+
+windows/network/TlsContext.obj: windows/network/TlsContext.cpp.obj
+.PHONY : windows/network/TlsContext.obj
+
+# target to build an object file
+windows/network/TlsContext.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.obj
+.PHONY : windows/network/TlsContext.cpp.obj
+
+windows/network/TlsContext.i: windows/network/TlsContext.cpp.i
+.PHONY : windows/network/TlsContext.i
+
+# target to preprocess a source file
+windows/network/TlsContext.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.i
+.PHONY : windows/network/TlsContext.cpp.i
+
+windows/network/TlsContext.s: windows/network/TlsContext.cpp.s
+.PHONY : windows/network/TlsContext.s
+
+# target to generate assembly for a file
+windows/network/TlsContext.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.s
+.PHONY : windows/network/TlsContext.cpp.s
+
+windows/pairing/DeviceIdentity.obj: windows/pairing/DeviceIdentity.cpp.obj
+.PHONY : windows/pairing/DeviceIdentity.obj
+
+# target to build an object file
+windows/pairing/DeviceIdentity.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.obj
+.PHONY : windows/pairing/DeviceIdentity.cpp.obj
+
+windows/pairing/DeviceIdentity.i: windows/pairing/DeviceIdentity.cpp.i
+.PHONY : windows/pairing/DeviceIdentity.i
+
+# target to preprocess a source file
+windows/pairing/DeviceIdentity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.i
+.PHONY : windows/pairing/DeviceIdentity.cpp.i
+
+windows/pairing/DeviceIdentity.s: windows/pairing/DeviceIdentity.cpp.s
+.PHONY : windows/pairing/DeviceIdentity.s
+
+# target to generate assembly for a file
+windows/pairing/DeviceIdentity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.s
+.PHONY : windows/pairing/DeviceIdentity.cpp.s
+
+windows/pairing/DeviceRegistry.obj: windows/pairing/DeviceRegistry.cpp.obj
+.PHONY : windows/pairing/DeviceRegistry.obj
+
+# target to build an object file
+windows/pairing/DeviceRegistry.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj
+.PHONY : windows/pairing/DeviceRegistry.cpp.obj
+
+windows/pairing/DeviceRegistry.i: windows/pairing/DeviceRegistry.cpp.i
+.PHONY : windows/pairing/DeviceRegistry.i
+
+# target to preprocess a source file
+windows/pairing/DeviceRegistry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.i
+.PHONY : windows/pairing/DeviceRegistry.cpp.i
+
+windows/pairing/DeviceRegistry.s: windows/pairing/DeviceRegistry.cpp.s
+.PHONY : windows/pairing/DeviceRegistry.s
+
+# target to generate assembly for a file
+windows/pairing/DeviceRegistry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.s
+.PHONY : windows/pairing/DeviceRegistry.cpp.s
+
+windows/pairing/PairingManager.obj: windows/pairing/PairingManager.cpp.obj
+.PHONY : windows/pairing/PairingManager.obj
+
+# target to build an object file
+windows/pairing/PairingManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj
+.PHONY : windows/pairing/PairingManager.cpp.obj
+
+windows/pairing/PairingManager.i: windows/pairing/PairingManager.cpp.i
+.PHONY : windows/pairing/PairingManager.i
+
+# target to preprocess a source file
+windows/pairing/PairingManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.i
+.PHONY : windows/pairing/PairingManager.cpp.i
+
+windows/pairing/PairingManager.s: windows/pairing/PairingManager.cpp.s
+.PHONY : windows/pairing/PairingManager.s
+
+# target to generate assembly for a file
+windows/pairing/PairingManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.s
+.PHONY : windows/pairing/PairingManager.cpp.s
+
+windows/pairing/SasPin.obj: windows/pairing/SasPin.cpp.obj
+.PHONY : windows/pairing/SasPin.obj
+
+# target to build an object file
+windows/pairing/SasPin.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj
+.PHONY : windows/pairing/SasPin.cpp.obj
+
+windows/pairing/SasPin.i: windows/pairing/SasPin.cpp.i
+.PHONY : windows/pairing/SasPin.i
+
+# target to preprocess a source file
+windows/pairing/SasPin.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.i
+.PHONY : windows/pairing/SasPin.cpp.i
+
+windows/pairing/SasPin.s: windows/pairing/SasPin.cpp.s
+.PHONY : windows/pairing/SasPin.s
+
+# target to generate assembly for a file
+windows/pairing/SasPin.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.s
+.PHONY : windows/pairing/SasPin.cpp.s
+
 windows/service/MobileUnlockService.obj: windows/service/MobileUnlockService.cpp.obj
 .PHONY : windows/service/MobileUnlockService.obj
 
@@ -439,6 +607,78 @@ windows/tests/IPCTest.s: windows/tests/IPCTest.cpp.s
 windows/tests/IPCTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.s
 .PHONY : windows/tests/IPCTest.cpp.s
+
+windows/tests/MdnsTest.obj: windows/tests/MdnsTest.cpp.obj
+.PHONY : windows/tests/MdnsTest.obj
+
+# target to build an object file
+windows/tests/MdnsTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj
+.PHONY : windows/tests/MdnsTest.cpp.obj
+
+windows/tests/MdnsTest.i: windows/tests/MdnsTest.cpp.i
+.PHONY : windows/tests/MdnsTest.i
+
+# target to preprocess a source file
+windows/tests/MdnsTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.i
+.PHONY : windows/tests/MdnsTest.cpp.i
+
+windows/tests/MdnsTest.s: windows/tests/MdnsTest.cpp.s
+.PHONY : windows/tests/MdnsTest.s
+
+# target to generate assembly for a file
+windows/tests/MdnsTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.s
+.PHONY : windows/tests/MdnsTest.cpp.s
+
+windows/tests/NetworkEngineTest.obj: windows/tests/NetworkEngineTest.cpp.obj
+.PHONY : windows/tests/NetworkEngineTest.obj
+
+# target to build an object file
+windows/tests/NetworkEngineTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj
+.PHONY : windows/tests/NetworkEngineTest.cpp.obj
+
+windows/tests/NetworkEngineTest.i: windows/tests/NetworkEngineTest.cpp.i
+.PHONY : windows/tests/NetworkEngineTest.i
+
+# target to preprocess a source file
+windows/tests/NetworkEngineTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.i
+.PHONY : windows/tests/NetworkEngineTest.cpp.i
+
+windows/tests/NetworkEngineTest.s: windows/tests/NetworkEngineTest.cpp.s
+.PHONY : windows/tests/NetworkEngineTest.s
+
+# target to generate assembly for a file
+windows/tests/NetworkEngineTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.s
+.PHONY : windows/tests/NetworkEngineTest.cpp.s
+
+windows/tests/PairingTest.obj: windows/tests/PairingTest.cpp.obj
+.PHONY : windows/tests/PairingTest.obj
+
+# target to build an object file
+windows/tests/PairingTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj
+.PHONY : windows/tests/PairingTest.cpp.obj
+
+windows/tests/PairingTest.i: windows/tests/PairingTest.cpp.i
+.PHONY : windows/tests/PairingTest.i
+
+# target to preprocess a source file
+windows/tests/PairingTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.i
+.PHONY : windows/tests/PairingTest.cpp.i
+
+windows/tests/PairingTest.s: windows/tests/PairingTest.cpp.s
+.PHONY : windows/tests/PairingTest.s
+
+# target to generate assembly for a file
+windows/tests/PairingTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.s
+.PHONY : windows/tests/PairingTest.cpp.s
 
 windows/tests/ProtocolTest.obj: windows/tests/ProtocolTest.cpp.obj
 .PHONY : windows/tests/ProtocolTest.obj
@@ -567,6 +807,27 @@ help:
 	@echo ... windows/logging/SecurityAuditLogger.obj
 	@echo ... windows/logging/SecurityAuditLogger.i
 	@echo ... windows/logging/SecurityAuditLogger.s
+	@echo ... windows/network/MdnsResponder.obj
+	@echo ... windows/network/MdnsResponder.i
+	@echo ... windows/network/MdnsResponder.s
+	@echo ... windows/network/NetworkEngine.obj
+	@echo ... windows/network/NetworkEngine.i
+	@echo ... windows/network/NetworkEngine.s
+	@echo ... windows/network/TlsContext.obj
+	@echo ... windows/network/TlsContext.i
+	@echo ... windows/network/TlsContext.s
+	@echo ... windows/pairing/DeviceIdentity.obj
+	@echo ... windows/pairing/DeviceIdentity.i
+	@echo ... windows/pairing/DeviceIdentity.s
+	@echo ... windows/pairing/DeviceRegistry.obj
+	@echo ... windows/pairing/DeviceRegistry.i
+	@echo ... windows/pairing/DeviceRegistry.s
+	@echo ... windows/pairing/PairingManager.obj
+	@echo ... windows/pairing/PairingManager.i
+	@echo ... windows/pairing/PairingManager.s
+	@echo ... windows/pairing/SasPin.obj
+	@echo ... windows/pairing/SasPin.i
+	@echo ... windows/pairing/SasPin.s
 	@echo ... windows/service/MobileUnlockService.obj
 	@echo ... windows/service/MobileUnlockService.i
 	@echo ... windows/service/MobileUnlockService.s
@@ -579,6 +840,15 @@ help:
 	@echo ... windows/tests/IPCTest.obj
 	@echo ... windows/tests/IPCTest.i
 	@echo ... windows/tests/IPCTest.s
+	@echo ... windows/tests/MdnsTest.obj
+	@echo ... windows/tests/MdnsTest.i
+	@echo ... windows/tests/MdnsTest.s
+	@echo ... windows/tests/NetworkEngineTest.obj
+	@echo ... windows/tests/NetworkEngineTest.i
+	@echo ... windows/tests/NetworkEngineTest.s
+	@echo ... windows/tests/PairingTest.obj
+	@echo ... windows/tests/PairingTest.i
+	@echo ... windows/tests/PairingTest.s
 	@echo ... windows/tests/ProtocolTest.obj
 	@echo ... windows/tests/ProtocolTest.i
 	@echo ... windows/tests/ProtocolTest.s

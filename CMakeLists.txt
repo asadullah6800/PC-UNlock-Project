@@ -56,11 +56,25 @@ set(WINDOWS_COMMON_SOURCES
     windows/diagnostics/DiagnosticManager.h
     windows/ipc/SecureIPC.cpp
     windows/ipc/SecureIPC.h
+    windows/network/TlsContext.cpp
+    windows/network/TlsContext.h
+    windows/network/NetworkEngine.cpp
+    windows/network/NetworkEngine.h
+    windows/network/MdnsResponder.cpp
+    windows/network/MdnsResponder.h
+    windows/pairing/DeviceIdentity.cpp
+    windows/pairing/DeviceIdentity.h
+    windows/pairing/SasPin.cpp
+    windows/pairing/SasPin.h
+    windows/pairing/DeviceRegistry.cpp
+    windows/pairing/DeviceRegistry.h
+    windows/pairing/PairingManager.cpp
+    windows/pairing/PairingManager.h
 )
 
 add_library(MobileUnlockCommon STATIC ${WINDOWS_COMMON_SOURCES} ${SHARED_HEADERS})
 target_include_directories(MobileUnlockCommon PUBLIC windows shared)
-target_link_libraries(MobileUnlockCommon PUBLIC advapi32 wtsapi32 shell32)
+target_link_libraries(MobileUnlockCommon PUBLIC advapi32 wtsapi32 shell32 ws2_32 crypt32 secur32)
 
 # Target 1: MobileUnlockService
 add_executable(MobileUnlockService
@@ -85,6 +99,9 @@ add_executable(MobileUnlockTests
     windows/tests/ProtocolTest.cpp
     windows/tests/ConfigurationTest.cpp
     windows/tests/IPCTest.cpp
+    windows/tests/NetworkEngineTest.cpp
+    windows/tests/MdnsTest.cpp
+    windows/tests/PairingTest.cpp
 )
 target_link_libraries(MobileUnlockTests PRIVATE MobileUnlockCommon gtest gtest_main)
 

@@ -131,12 +131,60 @@ CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\IPCTest.cpp" -o CMakeFiles\MobileUnlockTests.dir\windows\tests\IPCTest.cpp.s
 
+CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/flags.make
+CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/tests/NetworkEngineTest.cpp
+CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj -MF CMakeFiles\MobileUnlockTests.dir\windows\tests\NetworkEngineTest.cpp.obj.d -o CMakeFiles\MobileUnlockTests.dir\windows\tests\NetworkEngineTest.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\NetworkEngineTest.cpp"
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\NetworkEngineTest.cpp" > CMakeFiles\MobileUnlockTests.dir\windows\tests\NetworkEngineTest.cpp.i
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\NetworkEngineTest.cpp" -o CMakeFiles\MobileUnlockTests.dir\windows\tests\NetworkEngineTest.cpp.s
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/flags.make
+CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/tests/MdnsTest.cpp
+CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj -MF CMakeFiles\MobileUnlockTests.dir\windows\tests\MdnsTest.cpp.obj.d -o CMakeFiles\MobileUnlockTests.dir\windows\tests\MdnsTest.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\MdnsTest.cpp"
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\MdnsTest.cpp" > CMakeFiles\MobileUnlockTests.dir\windows\tests\MdnsTest.cpp.i
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\MdnsTest.cpp" -o CMakeFiles\MobileUnlockTests.dir\windows\tests\MdnsTest.cpp.s
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/flags.make
+CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/tests/PairingTest.cpp
+CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj -MF CMakeFiles\MobileUnlockTests.dir\windows\tests\PairingTest.cpp.obj.d -o CMakeFiles\MobileUnlockTests.dir\windows\tests\PairingTest.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\PairingTest.cpp"
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\PairingTest.cpp" > CMakeFiles\MobileUnlockTests.dir\windows\tests\PairingTest.cpp.i
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\PairingTest.cpp" -o CMakeFiles\MobileUnlockTests.dir\windows\tests\PairingTest.cpp.s
+
 # Object files for target MobileUnlockTests
 MobileUnlockTests_OBJECTS = \
 "CMakeFiles/MobileUnlockTests.dir/windows/tests/main.cpp.obj" \
 "CMakeFiles/MobileUnlockTests.dir/windows/tests/ProtocolTest.cpp.obj" \
 "CMakeFiles/MobileUnlockTests.dir/windows/tests/ConfigurationTest.cpp.obj" \
-"CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.obj"
+"CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.obj" \
+"CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj" \
+"CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj" \
+"CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj"
 
 # External object files for target MobileUnlockTests
 MobileUnlockTests_EXTERNAL_OBJECTS =
@@ -145,6 +193,9 @@ MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/main.cpp.o
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/ProtocolTest.cpp.obj
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/ConfigurationTest.cpp.obj
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.obj
+MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj
+MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj
+MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/build.make
 MobileUnlockTests.exe: libMobileUnlockCommon.a
 MobileUnlockTests.exe: lib/libgtestd.a
@@ -153,7 +204,7 @@ MobileUnlockTests.exe: lib/libgtestd.a
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/linkLibs.rsp
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/objects1.rsp
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MobileUnlockTests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable MobileUnlockTests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MobileUnlockTests.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\CMake\bin\cmake.exe" -P "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests_e3b0c442_discovery.cmake" -- 
 

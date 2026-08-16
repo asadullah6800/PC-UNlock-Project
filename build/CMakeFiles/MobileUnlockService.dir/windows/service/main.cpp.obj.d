@@ -137,4 +137,25 @@ CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
  c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\shared\protocol\protocoltypes.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstddef \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstring
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstring \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\network\networkengine.h \
+ c:\mingw\include\winsock2.h c:\mingw\include\winsock.h \
+ c:\mingw\include\sys\bsdtypes.h c:\mingw\include\sys\time.h \
+ c:\mingw\include\nspapi.h c:\mingw\include\wtypes.h \
+ c:\mingw\include\ws2tcpip.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mutex \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\error_constants.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\std_mutex.h \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\network\TlsContext.h \
+ c:\mingw\include\security.h c:\mingw\include\sspi.h \
+ c:\mingw\include\ntsecapi.h c:\mingw\include\subauth.h \
+ c:\mingw\include\ntsecpkg.h c:\mingw\include\windef.h \
+ c:\mingw\include\ntsecapi.h c:\mingw\include\security.h \
+ c:\mingw\include\secext.h c:\mingw\include\schannel.h \
+ c:\mingw\include\wincrypt.h \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\network\mdnsresponder.h

@@ -131,12 +131,124 @@ CMakeFiles/MobileUnlockCommon.dir/windows/ipc/SecureIPC.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/ipc/SecureIPC.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\ipc\SecureIPC.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\ipc\SecureIPC.cpp.s
 
+CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
+CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/network/TlsContext.cpp
+CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\network\TlsContext.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\network\TlsContext.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\network\TlsContext.cpp"
+
+CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\network\TlsContext.cpp" > CMakeFiles\MobileUnlockCommon.dir\windows\network\TlsContext.cpp.i
+
+CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\network\TlsContext.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\network\TlsContext.cpp.s
+
+CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
+CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/network/NetworkEngine.cpp
+CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\network\NetworkEngine.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\network\NetworkEngine.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\network\NetworkEngine.cpp"
+
+CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\network\NetworkEngine.cpp" > CMakeFiles\MobileUnlockCommon.dir\windows\network\NetworkEngine.cpp.i
+
+CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\network\NetworkEngine.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\network\NetworkEngine.cpp.s
+
+CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
+CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/network/MdnsResponder.cpp
+CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\network\MdnsResponder.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\network\MdnsResponder.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\network\MdnsResponder.cpp"
+
+CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\network\MdnsResponder.cpp" > CMakeFiles\MobileUnlockCommon.dir\windows\network\MdnsResponder.cpp.i
+
+CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\network\MdnsResponder.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\network\MdnsResponder.cpp.s
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/pairing/DeviceIdentity.cpp
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\pairing\DeviceIdentity.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\pairing\DeviceIdentity.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\DeviceIdentity.cpp"
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\DeviceIdentity.cpp" > CMakeFiles\MobileUnlockCommon.dir\windows\pairing\DeviceIdentity.cpp.i
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\DeviceIdentity.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\pairing\DeviceIdentity.cpp.s
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/pairing/SasPin.cpp
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\pairing\SasPin.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\pairing\SasPin.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\SasPin.cpp"
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\SasPin.cpp" > CMakeFiles\MobileUnlockCommon.dir\windows\pairing\SasPin.cpp.i
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\SasPin.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\pairing\SasPin.cpp.s
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/pairing/DeviceRegistry.cpp
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\pairing\DeviceRegistry.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\pairing\DeviceRegistry.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\DeviceRegistry.cpp"
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\DeviceRegistry.cpp" > CMakeFiles\MobileUnlockCommon.dir\windows\pairing\DeviceRegistry.cpp.i
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\DeviceRegistry.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\pairing\DeviceRegistry.cpp.s
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/pairing/PairingManager.cpp
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\pairing\PairingManager.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\pairing\PairingManager.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\PairingManager.cpp"
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\PairingManager.cpp" > CMakeFiles\MobileUnlockCommon.dir\windows\pairing\PairingManager.cpp.i
+
+CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\PairingManager.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\pairing\PairingManager.cpp.s
+
 # Object files for target MobileUnlockCommon
 MobileUnlockCommon_OBJECTS = \
 "CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.obj" \
 "CMakeFiles/MobileUnlockCommon.dir/windows/logging/SecurityAuditLogger.cpp.obj" \
 "CMakeFiles/MobileUnlockCommon.dir/windows/diagnostics/DiagnosticManager.cpp.obj" \
-"CMakeFiles/MobileUnlockCommon.dir/windows/ipc/SecureIPC.cpp.obj"
+"CMakeFiles/MobileUnlockCommon.dir/windows/ipc/SecureIPC.cpp.obj" \
+"CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.obj" \
+"CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.obj" \
+"CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj" \
+"CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.obj" \
+"CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj" \
+"CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj" \
+"CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj"
 
 # External object files for target MobileUnlockCommon
 MobileUnlockCommon_EXTERNAL_OBJECTS =
@@ -145,9 +257,16 @@ libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/configuration
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/logging/SecurityAuditLogger.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/diagnostics/DiagnosticManager.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/ipc/SecureIPC.cpp.obj
+libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/network/TlsContext.cpp.obj
+libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.obj
+libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj
+libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.obj
+libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj
+libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj
+libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/build.make
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libMobileUnlockCommon.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libMobileUnlockCommon.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\MobileUnlockCommon.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MobileUnlockCommon.dir\link.txt --verbose=$(VERBOSE)
 

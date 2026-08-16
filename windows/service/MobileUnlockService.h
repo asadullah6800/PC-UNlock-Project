@@ -8,6 +8,8 @@
 #include "../logging/SecurityAuditLogger.h"
 #include "../diagnostics/DiagnosticManager.h"
 #include "../ipc/SecureIPC.h"
+#include "../network/NetworkEngine.h"
+#include "../network/MdnsResponder.h"
 #include "../../shared/protocol/ProtocolTypes.h"
 
 namespace MobileUnlock::Service {
@@ -36,6 +38,7 @@ private:
 
     void ReportServiceStatus(DWORD currentState, DWORD exitCode, DWORD waitHint);
     void HandleIpcMessage(const std::vector<uint8_t>& message);
+    void HandleNetworkFrame(uint64_t clientId, const Protocol::FrameHeader& header, const std::vector<uint8_t>& payload);
 
     SERVICE_STATUS_HANDLE m_statusHandle;
     SERVICE_STATUS        m_serviceStatus;
@@ -45,6 +48,8 @@ private:
     Configuration::ConfigurationManager m_configManager;
     Diagnostics::DiagnosticManager m_diagnosticManager;
     std::unique_ptr<IPC::NamedPipeServer> m_ipcServer;
+    std::unique_ptr<Network::NetworkEngine> m_networkEngine;
+    std::unique_ptr<Network::MdnsResponder> m_mdnsResponder;
 };
 
 } // namespace MobileUnlock::Service
