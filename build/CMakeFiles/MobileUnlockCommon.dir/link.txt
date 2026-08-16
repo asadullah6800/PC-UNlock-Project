@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libMobileUnlockCommon.a CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.obj CMakeFiles/MobileUnlockCommon.dir/windows/logging/SecurityAuditLogger.cpp.obj CMakeFiles/MobileUnlockCommon.dir/windows/diagnostics/DiagnosticManager.cpp.obj CMakeFiles/MobileUnlockCommon.dir/windows/ipc/SecureIPC.cpp.obj
+C:\MinGW\bin\ranlib.exe libMobileUnlockCommon.a

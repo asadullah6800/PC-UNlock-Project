@@ -1,0 +1,101 @@
+{
+  "tests": 13,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "IPCTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "ServerClientConnectionLifecycle",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\IPCTest.cpp",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "name": "ConfigurationTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "DefaultValidation",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ConfigurationTest.cpp",
+          "line": 6
+        },
+        {
+          "name": "InvalidPortValidation",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ConfigurationTest.cpp",
+          "line": 11
+        },
+        {
+          "name": "InvalidTtlValidation",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ConfigurationTest.cpp",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "name": "ProtocolHeaderTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ExactHeaderSize",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ProtocolTest.cpp",
+          "line": 8
+        },
+        {
+          "name": "SerializeDeserializeHeader",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ProtocolTest.cpp",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "name": "CanonicalMessageTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "ExactSignedMessageSize",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ProtocolTest.cpp",
+          "line": 41
+        },
+        {
+          "name": "SerializeDeserializeSignedMessage",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ProtocolTest.cpp",
+          "line": 46
+        }
+      ]
+    },
+    {
+      "name": "ProtocolValidationTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "InvalidMagicRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ProtocolTest.cpp",
+          "line": 75
+        },
+        {
+          "name": "InvalidVersionRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ProtocolTest.cpp",
+          "line": 84
+        },
+        {
+          "name": "InvalidOpcodeRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ProtocolTest.cpp",
+          "line": 102
+        },
+        {
+          "name": "PayloadTooLargeRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ProtocolTest.cpp",
+          "line": 120
+        },
+        {
+          "name": "TruncatedMessageRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\ProtocolTest.cpp",
+          "line": 132
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/cmake_install.cmake",
+		"C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/_deps/googletest-build/cmake_install.cmake",
+		"C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

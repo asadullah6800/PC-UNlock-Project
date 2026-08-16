@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests_e3b0c442_tests.cmake")
+  include("C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests_e3b0c442_tests.cmake")
+else()
+  add_test(MobileUnlockTests_NOT_BUILT MobileUnlockTests_NOT_BUILT)
+endif()

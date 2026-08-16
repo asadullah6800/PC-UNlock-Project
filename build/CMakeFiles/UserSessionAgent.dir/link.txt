@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\UserSessionAgent.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\UserSessionAgent.dir/objects.a @CMakeFiles\UserSessionAgent.dir\objects1.rsp
+C:\MinGW\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\UserSessionAgent.dir/objects.a -Wl,--no-whole-archive -o UserSessionAgent.exe -Wl,--out-implib,libUserSessionAgent.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\UserSessionAgent.dir\linkLibs.rsp

@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\MobileUnlockService.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\MobileUnlockService.dir/objects.a @CMakeFiles\MobileUnlockService.dir\objects1.rsp
+C:\MinGW\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\MobileUnlockService.dir/objects.a -Wl,--no-whole-archive -o MobileUnlockService.exe -Wl,--out-implib,libMobileUnlockService.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MobileUnlockService.dir\linkLibs.rsp
