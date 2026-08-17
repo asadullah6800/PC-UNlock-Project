@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/ProtocolTest.cpp.obj"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/ProtocolTest.cpp.obj.d"
+  "CMakeFiles/MobileUnlockTests.dir/windows/tests/UserSessionAgentTest.cpp.obj"
+  "CMakeFiles/MobileUnlockTests.dir/windows/tests/UserSessionAgentTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/main.cpp.obj"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/main.cpp.obj.d"
   "MobileUnlockTests.exe"

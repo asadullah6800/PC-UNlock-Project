@@ -115,6 +115,16 @@ void NamedPipeServer::ServerWorkerThread() {
             DWORD bytesRead = 0;
 
             while (m_isRunning.load() && m_isConnected.load()) {
+                DWORD bytesAvail = 0;
+                if (!PeekNamedPipe(m_hPipe, nullptr, 0, nullptr, &bytesAvail, nullptr)) {
+                    m_isConnected.store(false);
+                    break;
+                }
+                if (bytesAvail == 0) {
+                    Sleep(10);
+                    continue;
+                }
+
                 BOOL success = ReadFile(m_hPipe, buffer.data(), static_cast<DWORD>(buffer.size()), &bytesRead, nullptr);
                 if (success && bytesRead > 0) {
                     std::vector<uint8_t> message(buffer.begin(), buffer.begin() + bytesRead);
@@ -207,10 +217,22 @@ bool NamedPipeClient::SendMessageToServer(const std::vector<uint8_t>& message) {
     return success && (bytesWritten == static_cast<DWORD>(message.size()));
 }
 
-ReadResult NamedPipeClient::ReadMessageFromServer(DWORD /*timeoutMs*/) {
+ReadResult NamedPipeClient::ReadMessageFromServer(DWORD timeoutMs) {
     if (m_hPipe == INVALID_HANDLE_VALUE) return ReadResult();
 
-    std::vector<uint8_t> buffer(4096);
+    DWORD startTime = GetTickCount();
+    DWORD bytesAvail = 0;
+    while (true) {
+        if (PeekNamedPipe(m_hPipe, nullptr, 0, nullptr, &bytesAvail, nullptr) && bytesAvail > 0) {
+            break;
+        }
+        if ((GetTickCount() - startTime) >= timeoutMs) {
+            return ReadResult();
+        }
+        Sleep(10);
+    }
+
+    std::vector<uint8_t> buffer(bytesAvail > 0 ? bytesAvail : 4096);
     DWORD bytesRead = 0;
     BOOL success = ReadFile(m_hPipe, buffer.data(), static_cast<DWORD>(buffer.size()), &bytesRead, nullptr);
 

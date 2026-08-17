@@ -241,15 +241,57 @@ void MobileUnlockService::HandleIpcMessage(const std::vector<uint8_t>& message) 
     }
 
     auto header = headerResult.value;
+    std::vector<uint8_t> payload;
+    if (message.size() > Protocol::FRAME_HEADER_SIZE) {
+        payload.assign(message.begin() + Protocol::FRAME_HEADER_SIZE, message.end());
+    }
+
     if (header.MessageType == static_cast<uint16_t>(Protocol::MessageType::PING)) {
         Protocol::FrameHeader pongHeader;
+        pongHeader.Magic          = Protocol::PROTOCOL_MAGIC;
+        pongHeader.MajorVersion   = Protocol::PROTOCOL_MAJOR_VERSION;
+        pongHeader.MinorVersion   = Protocol::PROTOCOL_MINOR_VERSION;
         pongHeader.MessageType    = static_cast<uint16_t>(Protocol::MessageType::PONG);
+        pongHeader.Reserved       = 0;
         pongHeader.MessageID      = header.MessageID;
         pongHeader.SequenceNumber = header.SequenceNumber + 1;
         pongHeader.PayloadLength  = 0;
 
         auto responseBuf = Protocol::SerializeFrameHeader(pongHeader);
         m_ipcServer->SendMessageToClient(responseBuf);
+        return;
+    }
+
+    if (header.MessageType == static_cast<uint16_t>(Protocol::MessageType::LOCK_RESPONSE)) {
+        uint64_t client = m_pendingLockClientId.exchange(0);
+        uint32_t msgId = m_pendingLockMessageId.load();
+
+        if (client != 0 && m_networkEngine) {
+            Protocol::FrameHeader netHeader;
+            netHeader.Magic          = Protocol::PROTOCOL_MAGIC;
+            netHeader.MajorVersion   = Protocol::PROTOCOL_MAJOR_VERSION;
+            netHeader.MinorVersion   = Protocol::PROTOCOL_MINOR_VERSION;
+            netHeader.MessageType    = static_cast<uint16_t>(Protocol::MessageType::LOCK_RESPONSE);
+            netHeader.Reserved       = 0;
+            netHeader.MessageID      = msgId;
+            netHeader.SequenceNumber = 2;
+            netHeader.PayloadLength  = static_cast<uint32_t>(payload.size());
+
+            m_networkEngine->SendFrame(client, netHeader, payload);
+        }
+
+        SetState(Protocol::PcState::LOCKED);
+        Logging::SecurityAuditLogger::GetInstance().LogSecurityEvent(
+            Logging::EventId::LOCK_EXECUTED,
+            Logging::LogLevel::Info,
+            L"Workstation successfully locked via UserSessionAgent remote lock."
+        );
+        return;
+    }
+
+    if (header.MessageType == static_cast<uint16_t>(Protocol::MessageType::STATUS_RESPONSE)) {
+        // Agent reporting status
+        return;
     }
 }
 
@@ -273,11 +315,9 @@ void MobileUnlockService::HandleNetworkFrame(uint64_t clientId, const Protocol::
 
     if (header.MessageType == static_cast<uint16_t>(Protocol::MessageType::AUTH_REQUEST)) {
         Pairing::DeviceId deviceId;
-        // If payload contains 16-byte binary device ID or JSON
         if (payload.size() >= 16) {
             std::memcpy(deviceId.data(), payload.data(), 16);
         } else {
-            // Try extracting deviceId from string if JSON
             std::string payloadStr(payload.begin(), payload.end());
             size_t pos = payloadStr.find("\"deviceId\":\"");
             if (pos != std::string::npos) {
@@ -299,6 +339,92 @@ void MobileUnlockService::HandleNetworkFrame(uint64_t clientId, const Protocol::
         Auth::AuthenticationManager::Instance().HandleAuthResponse(header, payload, outcomePayload, outHeader);
         m_networkEngine->SendFrame(clientId, outHeader, outcomePayload);
         return;
+    }
+
+    if (header.MessageType == static_cast<uint16_t>(Protocol::MessageType::LOCK_REQUEST)) {
+        Pairing::DeviceId deviceId;
+        bool hasDeviceId = false;
+
+        // Try extracting deviceId from canonical 88B message if present
+        if (payload.size() >= Protocol::CANONICAL_SIGNED_MESSAGE_SIZE) {
+            auto parseMsg = Protocol::DeserializeSignedMessage(payload.data(), Protocol::CANONICAL_SIGNED_MESSAGE_SIZE);
+            if (parseMsg.has_value()) {
+                std::memcpy(deviceId.data(), parseMsg.value.DeviceIdentity, 16);
+                hasDeviceId = true;
+            }
+        }
+
+        if (!hasDeviceId && payload.size() >= 16) {
+            std::memcpy(deviceId.data(), payload.data(), 16);
+            hasDeviceId = true;
+        }
+
+        if (!hasDeviceId) {
+            std::string payloadStr(payload.begin(), payload.end());
+            size_t pos = payloadStr.find("\"deviceId\":\"");
+            if (pos != std::string::npos) {
+                std::string devStr = payloadStr.substr(pos + 12, 36);
+                hasDeviceId = Pairing::DeviceIdFromString(devStr, deviceId);
+            }
+        }
+
+        // Validate device in DeviceRegistry if deviceId is provided
+        std::string devIdStr = hasDeviceId ? Pairing::DeviceIdToString(deviceId) : "";
+        if (hasDeviceId && !Pairing::IsDeviceActive(devIdStr)) {
+            Protocol::FrameHeader failHdr;
+            failHdr.Magic          = Protocol::PROTOCOL_MAGIC;
+            failHdr.MajorVersion   = Protocol::PROTOCOL_MAJOR_VERSION;
+            failHdr.MinorVersion   = Protocol::PROTOCOL_MINOR_VERSION;
+            failHdr.MessageType    = static_cast<uint16_t>(Protocol::MessageType::LOCK_RESPONSE);
+            failHdr.Reserved       = 0;
+            failHdr.MessageID      = header.MessageID;
+            failHdr.SequenceNumber = header.SequenceNumber + 1;
+
+            std::string err = "{\"status\":\"FAILURE\",\"reason\":\"DEVICE_UNAUTHORIZED\"}";
+            std::vector<uint8_t> errPayload(err.begin(), err.end());
+            failHdr.PayloadLength = static_cast<uint32_t>(errPayload.size());
+
+            m_networkEngine->SendFrame(clientId, failHdr, errPayload);
+            return;
+        }
+
+        // Check if UserSessionAgent is connected
+        if (!m_ipcServer || !m_ipcServer->IsConnected()) {
+            Protocol::FrameHeader failHdr;
+            failHdr.Magic          = Protocol::PROTOCOL_MAGIC;
+            failHdr.MajorVersion   = Protocol::PROTOCOL_MAJOR_VERSION;
+            failHdr.MinorVersion   = Protocol::PROTOCOL_MINOR_VERSION;
+            failHdr.MessageType    = static_cast<uint16_t>(Protocol::MessageType::LOCK_RESPONSE);
+            failHdr.Reserved       = 0;
+            failHdr.MessageID      = header.MessageID;
+            failHdr.SequenceNumber = header.SequenceNumber + 1;
+
+            std::string err = "{\"status\":\"FAILURE\",\"reason\":\"AGENT_UNAVAILABLE\"}";
+            std::vector<uint8_t> errPayload(err.begin(), err.end());
+            failHdr.PayloadLength = static_cast<uint32_t>(errPayload.size());
+
+            m_networkEngine->SendFrame(clientId, failHdr, errPayload);
+            return;
+        }
+
+        // Save pending lock client ID
+        m_pendingLockClientId.store(clientId);
+        m_pendingLockMessageId.store(header.MessageID);
+
+        // Dispatch LOCK_REQUEST to UserSessionAgent via Secure IPC
+        Protocol::FrameHeader ipcReq;
+        ipcReq.Magic          = Protocol::PROTOCOL_MAGIC;
+        ipcReq.MajorVersion   = Protocol::PROTOCOL_MAJOR_VERSION;
+        ipcReq.MinorVersion   = Protocol::PROTOCOL_MINOR_VERSION;
+        ipcReq.MessageType    = static_cast<uint16_t>(Protocol::MessageType::LOCK_REQUEST);
+        ipcReq.Reserved       = 0;
+        ipcReq.MessageID      = header.MessageID;
+        ipcReq.SequenceNumber = 1;
+        ipcReq.PayloadLength  = static_cast<uint32_t>(payload.size());
+
+        auto ipcBuf = Protocol::SerializeFrameHeader(ipcReq);
+        ipcBuf.insert(ipcBuf.end(), payload.begin(), payload.end());
+        m_ipcServer->SendMessageToClient(ipcBuf);
     }
 }
 

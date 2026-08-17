@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/NetworkEngineTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/PairingTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/PairingTest.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/ProtocolTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/ProtocolTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/ProtocolTest.cpp.obj.d"
+  "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/UserSessionAgentTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/UserSessionAgentTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/UserSessionAgentTest.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/main.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/main.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/main.cpp.obj.d"
   )
 

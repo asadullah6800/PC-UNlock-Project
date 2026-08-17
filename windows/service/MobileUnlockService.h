@@ -50,6 +50,9 @@ private:
     std::unique_ptr<IPC::NamedPipeServer> m_ipcServer;
     std::unique_ptr<Network::NetworkEngine> m_networkEngine;
     std::unique_ptr<Network::MdnsResponder> m_mdnsResponder;
+
+    std::atomic<uint64_t> m_pendingLockClientId{0};
+    std::atomic<uint32_t> m_pendingLockMessageId{0};
 };
 
 } // namespace MobileUnlock::Service

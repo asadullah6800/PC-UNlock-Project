@@ -21,6 +21,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/pairing/DeviceRegistry.cpp" "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj" "gcc" "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/pairing/PairingManager.cpp" "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj" "gcc" "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/pairing/SasPin.cpp" "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj" "gcc" "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj.d"
+  "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/user_session_agent/UserSessionAgent.cpp" "CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj" "gcc" "CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

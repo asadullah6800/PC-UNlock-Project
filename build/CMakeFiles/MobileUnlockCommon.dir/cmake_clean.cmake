@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj.d"
   "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj"
   "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj.d"
+  "CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj"
+  "CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj.d"
   "libMobileUnlockCommon.a"
   "libMobileUnlockCommon.pdb"
 )

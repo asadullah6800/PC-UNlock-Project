@@ -74,11 +74,13 @@ set(WINDOWS_COMMON_SOURCES
     windows/crypto/CryptoManager.h
     windows/authentication/AuthenticationManager.cpp
     windows/authentication/AuthenticationManager.h
+    windows/user_session_agent/UserSessionAgent.cpp
+    windows/user_session_agent/UserSessionAgent.h
 )
 
 add_library(MobileUnlockCommon STATIC ${WINDOWS_COMMON_SOURCES} ${SHARED_HEADERS})
 target_include_directories(MobileUnlockCommon PUBLIC windows shared)
-target_link_libraries(MobileUnlockCommon PUBLIC advapi32 wtsapi32 shell32 ws2_32 crypt32 secur32)
+target_link_libraries(MobileUnlockCommon PUBLIC advapi32 wtsapi32 shell32 ws2_32 crypt32 secur32 user32)
 
 # Target 1: MobileUnlockService
 add_executable(MobileUnlockService
@@ -91,8 +93,6 @@ target_link_libraries(MobileUnlockService PRIVATE MobileUnlockCommon)
 # Target 2: UserSessionAgent
 add_executable(UserSessionAgent
     windows/user_session_agent/main.cpp
-    windows/user_session_agent/UserSessionAgent.cpp
-    windows/user_session_agent/UserSessionAgent.h
 )
 target_link_libraries(UserSessionAgent PRIVATE MobileUnlockCommon)
 
@@ -109,6 +109,7 @@ add_executable(MobileUnlockTests
     windows/tests/CryptoManagerTest.cpp
     windows/tests/AuthenticationManagerTest.cpp
     windows/tests/DeterministicInteroperabilityTest.cpp
+    windows/tests/UserSessionAgentTest.cpp
 )
 target_link_libraries(MobileUnlockTests PRIVATE MobileUnlockCommon gtest gtest_main)
 

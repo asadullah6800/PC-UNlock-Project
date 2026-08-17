@@ -1,7 +1,33 @@
 {
-  "tests": 68,
+  "tests": 72,
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "UserSessionAgentTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "DiscoverCurrentSessionReturnsInfo",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\UserSessionAgentTest.cpp",
+          "line": 33
+        },
+        {
+          "name": "ProcessLockCommandSucceedsWhenLockWorkStationReturnsTrue",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\UserSessionAgentTest.cpp",
+          "line": 40
+        },
+        {
+          "name": "ProcessLockCommandFailsWhenLockWorkStationReturnsFalse",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\UserSessionAgentTest.cpp",
+          "line": 64
+        },
+        {
+          "name": "IpcDispatchAndLockResponseRoundTrip",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\UserSessionAgentTest.cpp",
+          "line": 88
+        }
+      ]
+    },
     {
       "name": "InteroperabilityTest",
       "tests": 7,

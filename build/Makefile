@@ -824,6 +824,30 @@ windows/tests/ProtocolTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/ProtocolTest.cpp.s
 .PHONY : windows/tests/ProtocolTest.cpp.s
 
+windows/tests/UserSessionAgentTest.obj: windows/tests/UserSessionAgentTest.cpp.obj
+.PHONY : windows/tests/UserSessionAgentTest.obj
+
+# target to build an object file
+windows/tests/UserSessionAgentTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/UserSessionAgentTest.cpp.obj
+.PHONY : windows/tests/UserSessionAgentTest.cpp.obj
+
+windows/tests/UserSessionAgentTest.i: windows/tests/UserSessionAgentTest.cpp.i
+.PHONY : windows/tests/UserSessionAgentTest.i
+
+# target to preprocess a source file
+windows/tests/UserSessionAgentTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/UserSessionAgentTest.cpp.i
+.PHONY : windows/tests/UserSessionAgentTest.cpp.i
+
+windows/tests/UserSessionAgentTest.s: windows/tests/UserSessionAgentTest.cpp.s
+.PHONY : windows/tests/UserSessionAgentTest.s
+
+# target to generate assembly for a file
+windows/tests/UserSessionAgentTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/UserSessionAgentTest.cpp.s
+.PHONY : windows/tests/UserSessionAgentTest.cpp.s
+
 windows/tests/main.obj: windows/tests/main.cpp.obj
 .PHONY : windows/tests/main.obj
 
@@ -853,7 +877,7 @@ windows/user_session_agent/UserSessionAgent.obj: windows/user_session_agent/User
 
 # target to build an object file
 windows/user_session_agent/UserSessionAgent.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\UserSessionAgent.dir\build.make CMakeFiles/UserSessionAgent.dir/windows/user_session_agent/UserSessionAgent.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj
 .PHONY : windows/user_session_agent/UserSessionAgent.cpp.obj
 
 windows/user_session_agent/UserSessionAgent.i: windows/user_session_agent/UserSessionAgent.cpp.i
@@ -861,7 +885,7 @@ windows/user_session_agent/UserSessionAgent.i: windows/user_session_agent/UserSe
 
 # target to preprocess a source file
 windows/user_session_agent/UserSessionAgent.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\UserSessionAgent.dir\build.make CMakeFiles/UserSessionAgent.dir/windows/user_session_agent/UserSessionAgent.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.i
 .PHONY : windows/user_session_agent/UserSessionAgent.cpp.i
 
 windows/user_session_agent/UserSessionAgent.s: windows/user_session_agent/UserSessionAgent.cpp.s
@@ -869,7 +893,7 @@ windows/user_session_agent/UserSessionAgent.s: windows/user_session_agent/UserSe
 
 # target to generate assembly for a file
 windows/user_session_agent/UserSessionAgent.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\UserSessionAgent.dir\build.make CMakeFiles/UserSessionAgent.dir/windows/user_session_agent/UserSessionAgent.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.s
 .PHONY : windows/user_session_agent/UserSessionAgent.cpp.s
 
 windows/user_session_agent/main.obj: windows/user_session_agent/main.cpp.obj
@@ -987,6 +1011,9 @@ help:
 	@echo ... windows/tests/ProtocolTest.obj
 	@echo ... windows/tests/ProtocolTest.i
 	@echo ... windows/tests/ProtocolTest.s
+	@echo ... windows/tests/UserSessionAgentTest.obj
+	@echo ... windows/tests/UserSessionAgentTest.i
+	@echo ... windows/tests/UserSessionAgentTest.s
 	@echo ... windows/tests/main.obj
 	@echo ... windows/tests/main.i
 	@echo ... windows/tests/main.s
