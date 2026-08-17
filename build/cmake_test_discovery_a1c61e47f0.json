@@ -1,7 +1,88 @@
 {
-  "tests": 72,
+  "tests": 87,
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "CredentialProviderTest",
+      "tests": 15,
+      "testsuite": [
+        {
+          "name": "ProviderCreation",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 144
+        },
+        {
+          "name": "ComLifetimeRefCounting",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 155
+        },
+        {
+          "name": "CredentialEnumeration",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 167
+        },
+        {
+          "name": "CredentialEnumerationUnlockWorkstation",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 190
+        },
+        {
+          "name": "UnsupportedScenarioRejected",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 204
+        },
+        {
+          "name": "FieldDescriptorCorrectness",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 220
+        },
+        {
+          "name": "FieldValueRetrieval",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 265
+        },
+        {
+          "name": "AdviseUnAdvise",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 295
+        },
+        {
+          "name": "GetSerializationAlwaysNoCredential",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 320
+        },
+        {
+          "name": "GetSerializationNeverSubmitsBuffer",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 343
+        },
+        {
+          "name": "GetSerializationIpcTimeout",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 380
+        },
+        {
+          "name": "GetSerializationServiceUnavailable",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 409
+        },
+        {
+          "name": "GetSerializationMalformedResponse",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 437
+        },
+        {
+          "name": "SafeFailureNativeProvidersUnaffected",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 472
+        },
+        {
+          "name": "StatusFieldUpdatesOnIpcSuccess",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
+          "line": 513
+        }
+      ]
+    },
     {
       "name": "UserSessionAgentTest",
       "tests": 4,

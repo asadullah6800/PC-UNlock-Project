@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\CredentialProvider.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\CredentialProvider.dir/objects.a @CMakeFiles\CredentialProvider.dir\objects1.rsp
+C:\MinGW\bin\c++.exe -g -shared "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\credential_provider\CredentialProvider.def" -o libCredentialProvider.dll -Wl,--out-implib,libCredentialProvider.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\CredentialProvider.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\CredentialProvider.dir\linkLibs.rsp

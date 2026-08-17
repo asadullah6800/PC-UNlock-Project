@@ -91,6 +91,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MobileUnlockService.dir/DependInfo.cmake"
   "CMakeFiles/UserSessionAgent.dir/DependInfo.cmake"
   "CMakeFiles/MobileUnlockTests.dir/DependInfo.cmake"
+  "CMakeFiles/CredentialProvider.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )

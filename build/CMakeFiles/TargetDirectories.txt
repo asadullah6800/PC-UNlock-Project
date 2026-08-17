@@ -2,6 +2,7 @@ C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/CMakeFiles/MobileUnlock
 C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/CMakeFiles/MobileUnlockService.dir
 C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/CMakeFiles/UserSessionAgent.dir
 C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/CMakeFiles/MobileUnlockTests.dir
+C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/CMakeFiles/CredentialProvider.dir
 C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/CMakeFiles/test.dir
 C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/CMakeFiles/edit_cache.dir
 C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/CMakeFiles/rebuild_cache.dir

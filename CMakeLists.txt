@@ -76,10 +76,16 @@ set(WINDOWS_COMMON_SOURCES
     windows/authentication/AuthenticationManager.h
     windows/user_session_agent/UserSessionAgent.cpp
     windows/user_session_agent/UserSessionAgent.h
+    windows/credential_provider/CredentialProvider.cpp
+    windows/credential_provider/CredentialProvider.h
+    windows/credential_provider/MobileUnlockCredential.cpp
+    windows/credential_provider/MobileUnlockCredential.h
+    windows/credential_provider/ClassFactory.cpp
+    windows/credential_provider/ClassFactory.h
 )
 
 add_library(MobileUnlockCommon STATIC ${WINDOWS_COMMON_SOURCES} ${SHARED_HEADERS})
-target_include_directories(MobileUnlockCommon PUBLIC windows shared)
+target_include_directories(MobileUnlockCommon PUBLIC windows windows/credential_provider shared)
 target_link_libraries(MobileUnlockCommon PUBLIC advapi32 wtsapi32 shell32 ws2_32 crypt32 secur32 user32)
 
 # Target 1: MobileUnlockService
@@ -110,8 +116,22 @@ add_executable(MobileUnlockTests
     windows/tests/AuthenticationManagerTest.cpp
     windows/tests/DeterministicInteroperabilityTest.cpp
     windows/tests/UserSessionAgentTest.cpp
+    windows/tests/CredentialProviderTest.cpp
 )
-target_link_libraries(MobileUnlockTests PRIVATE MobileUnlockCommon gtest gtest_main)
+target_link_libraries(MobileUnlockTests PRIVATE MobileUnlockCommon gtest gtest_main ole32 oleaut32)
 
 include(GoogleTest)
 gtest_discover_tests(MobileUnlockTests)
+
+# Target 4: CredentialProvider DLL
+# VM-ONLY — Do not register on the physical host machine.
+add_library(CredentialProvider SHARED
+    windows/credential_provider/dllmain.cpp
+    windows/credential_provider/CredentialProvider.def
+)
+target_include_directories(CredentialProvider PRIVATE windows windows/credential_provider shared)
+target_link_libraries(CredentialProvider PRIVATE MobileUnlockCommon ole32 oleaut32)
+set_target_properties(CredentialProvider PROPERTIES
+    OUTPUT_NAME "CredentialProvider"
+    SUFFIX ".dll"
+)

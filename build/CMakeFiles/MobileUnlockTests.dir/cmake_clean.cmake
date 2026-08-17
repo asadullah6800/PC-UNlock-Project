@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationManagerTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/ConfigurationTest.cpp.obj"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/ConfigurationTest.cpp.obj.d"
+  "CMakeFiles/MobileUnlockTests.dir/windows/tests/CredentialProviderTest.cpp.obj"
+  "CMakeFiles/MobileUnlockTests.dir/windows/tests/CredentialProviderTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/CryptoManagerTest.cpp.obj"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/CryptoManagerTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.obj"

@@ -1,1 +1,1 @@
- libMobileUnlockCommon.a lib/libgtestd.a lib/libgtest_maind.a -ladvapi32 -lwtsapi32 -lshell32 -lws2_32 -lcrypt32 -lsecur32 -luser32 lib/libgtestd.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ libMobileUnlockCommon.a lib/libgtestd.a lib/libgtest_maind.a -lole32 -loleaut32 -ladvapi32 -lwtsapi32 -lshell32 -lws2_32 -lcrypt32 -lsecur32 -luser32 lib/libgtestd.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

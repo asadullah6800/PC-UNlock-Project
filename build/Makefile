@@ -223,6 +223,19 @@ MobileUnlockTests/fast:
 .PHONY : MobileUnlockTests/fast
 
 #=============================================================================
+# Target rules for targets named CredentialProvider
+
+# Build rule for target.
+CredentialProvider: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CredentialProvider
+.PHONY : CredentialProvider
+
+# fast build rule for target.
+CredentialProvider/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CredentialProvider.dir\build.make CMakeFiles/CredentialProvider.dir/build
+.PHONY : CredentialProvider/fast
+
+#=============================================================================
 # Target rules for targets named gtest
 
 # Build rule for target.
@@ -295,6 +308,102 @@ windows/configuration/ConfigurationManager.s: windows/configuration/Configuratio
 windows/configuration/ConfigurationManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.s
 .PHONY : windows/configuration/ConfigurationManager.cpp.s
+
+windows/credential_provider/ClassFactory.obj: windows/credential_provider/ClassFactory.cpp.obj
+.PHONY : windows/credential_provider/ClassFactory.obj
+
+# target to build an object file
+windows/credential_provider/ClassFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.obj
+.PHONY : windows/credential_provider/ClassFactory.cpp.obj
+
+windows/credential_provider/ClassFactory.i: windows/credential_provider/ClassFactory.cpp.i
+.PHONY : windows/credential_provider/ClassFactory.i
+
+# target to preprocess a source file
+windows/credential_provider/ClassFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.i
+.PHONY : windows/credential_provider/ClassFactory.cpp.i
+
+windows/credential_provider/ClassFactory.s: windows/credential_provider/ClassFactory.cpp.s
+.PHONY : windows/credential_provider/ClassFactory.s
+
+# target to generate assembly for a file
+windows/credential_provider/ClassFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.s
+.PHONY : windows/credential_provider/ClassFactory.cpp.s
+
+windows/credential_provider/CredentialProvider.obj: windows/credential_provider/CredentialProvider.cpp.obj
+.PHONY : windows/credential_provider/CredentialProvider.obj
+
+# target to build an object file
+windows/credential_provider/CredentialProvider.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj
+.PHONY : windows/credential_provider/CredentialProvider.cpp.obj
+
+windows/credential_provider/CredentialProvider.i: windows/credential_provider/CredentialProvider.cpp.i
+.PHONY : windows/credential_provider/CredentialProvider.i
+
+# target to preprocess a source file
+windows/credential_provider/CredentialProvider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.i
+.PHONY : windows/credential_provider/CredentialProvider.cpp.i
+
+windows/credential_provider/CredentialProvider.s: windows/credential_provider/CredentialProvider.cpp.s
+.PHONY : windows/credential_provider/CredentialProvider.s
+
+# target to generate assembly for a file
+windows/credential_provider/CredentialProvider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.s
+.PHONY : windows/credential_provider/CredentialProvider.cpp.s
+
+windows/credential_provider/MobileUnlockCredential.obj: windows/credential_provider/MobileUnlockCredential.cpp.obj
+.PHONY : windows/credential_provider/MobileUnlockCredential.obj
+
+# target to build an object file
+windows/credential_provider/MobileUnlockCredential.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.obj
+.PHONY : windows/credential_provider/MobileUnlockCredential.cpp.obj
+
+windows/credential_provider/MobileUnlockCredential.i: windows/credential_provider/MobileUnlockCredential.cpp.i
+.PHONY : windows/credential_provider/MobileUnlockCredential.i
+
+# target to preprocess a source file
+windows/credential_provider/MobileUnlockCredential.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.i
+.PHONY : windows/credential_provider/MobileUnlockCredential.cpp.i
+
+windows/credential_provider/MobileUnlockCredential.s: windows/credential_provider/MobileUnlockCredential.cpp.s
+.PHONY : windows/credential_provider/MobileUnlockCredential.s
+
+# target to generate assembly for a file
+windows/credential_provider/MobileUnlockCredential.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.s
+.PHONY : windows/credential_provider/MobileUnlockCredential.cpp.s
+
+windows/credential_provider/dllmain.obj: windows/credential_provider/dllmain.cpp.obj
+.PHONY : windows/credential_provider/dllmain.obj
+
+# target to build an object file
+windows/credential_provider/dllmain.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CredentialProvider.dir\build.make CMakeFiles/CredentialProvider.dir/windows/credential_provider/dllmain.cpp.obj
+.PHONY : windows/credential_provider/dllmain.cpp.obj
+
+windows/credential_provider/dllmain.i: windows/credential_provider/dllmain.cpp.i
+.PHONY : windows/credential_provider/dllmain.i
+
+# target to preprocess a source file
+windows/credential_provider/dllmain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CredentialProvider.dir\build.make CMakeFiles/CredentialProvider.dir/windows/credential_provider/dllmain.cpp.i
+.PHONY : windows/credential_provider/dllmain.cpp.i
+
+windows/credential_provider/dllmain.s: windows/credential_provider/dllmain.cpp.s
+.PHONY : windows/credential_provider/dllmain.s
+
+# target to generate assembly for a file
+windows/credential_provider/dllmain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CredentialProvider.dir\build.make CMakeFiles/CredentialProvider.dir/windows/credential_provider/dllmain.cpp.s
+.PHONY : windows/credential_provider/dllmain.cpp.s
 
 windows/crypto/CryptoManager.obj: windows/crypto/CryptoManager.cpp.obj
 .PHONY : windows/crypto/CryptoManager.obj
@@ -656,6 +765,30 @@ windows/tests/ConfigurationTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/ConfigurationTest.cpp.s
 .PHONY : windows/tests/ConfigurationTest.cpp.s
 
+windows/tests/CredentialProviderTest.obj: windows/tests/CredentialProviderTest.cpp.obj
+.PHONY : windows/tests/CredentialProviderTest.obj
+
+# target to build an object file
+windows/tests/CredentialProviderTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/CredentialProviderTest.cpp.obj
+.PHONY : windows/tests/CredentialProviderTest.cpp.obj
+
+windows/tests/CredentialProviderTest.i: windows/tests/CredentialProviderTest.cpp.i
+.PHONY : windows/tests/CredentialProviderTest.i
+
+# target to preprocess a source file
+windows/tests/CredentialProviderTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/CredentialProviderTest.cpp.i
+.PHONY : windows/tests/CredentialProviderTest.cpp.i
+
+windows/tests/CredentialProviderTest.s: windows/tests/CredentialProviderTest.cpp.s
+.PHONY : windows/tests/CredentialProviderTest.s
+
+# target to generate assembly for a file
+windows/tests/CredentialProviderTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/CredentialProviderTest.cpp.s
+.PHONY : windows/tests/CredentialProviderTest.cpp.s
+
 windows/tests/CryptoManagerTest.obj: windows/tests/CryptoManagerTest.cpp.obj
 .PHONY : windows/tests/CryptoManagerTest.obj
 
@@ -933,6 +1066,7 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... test
+	@echo ... CredentialProvider
 	@echo ... MobileUnlockCommon
 	@echo ... MobileUnlockService
 	@echo ... MobileUnlockTests
@@ -945,6 +1079,18 @@ help:
 	@echo ... windows/configuration/ConfigurationManager.obj
 	@echo ... windows/configuration/ConfigurationManager.i
 	@echo ... windows/configuration/ConfigurationManager.s
+	@echo ... windows/credential_provider/ClassFactory.obj
+	@echo ... windows/credential_provider/ClassFactory.i
+	@echo ... windows/credential_provider/ClassFactory.s
+	@echo ... windows/credential_provider/CredentialProvider.obj
+	@echo ... windows/credential_provider/CredentialProvider.i
+	@echo ... windows/credential_provider/CredentialProvider.s
+	@echo ... windows/credential_provider/MobileUnlockCredential.obj
+	@echo ... windows/credential_provider/MobileUnlockCredential.i
+	@echo ... windows/credential_provider/MobileUnlockCredential.s
+	@echo ... windows/credential_provider/dllmain.obj
+	@echo ... windows/credential_provider/dllmain.i
+	@echo ... windows/credential_provider/dllmain.s
 	@echo ... windows/crypto/CryptoManager.obj
 	@echo ... windows/crypto/CryptoManager.i
 	@echo ... windows/crypto/CryptoManager.s
@@ -990,6 +1136,9 @@ help:
 	@echo ... windows/tests/ConfigurationTest.obj
 	@echo ... windows/tests/ConfigurationTest.i
 	@echo ... windows/tests/ConfigurationTest.s
+	@echo ... windows/tests/CredentialProviderTest.obj
+	@echo ... windows/tests/CredentialProviderTest.i
+	@echo ... windows/tests/CredentialProviderTest.s
 	@echo ... windows/tests/CryptoManagerTest.obj
 	@echo ... windows/tests/CryptoManagerTest.i
 	@echo ... windows/tests/CryptoManagerTest.s
