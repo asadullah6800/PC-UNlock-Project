@@ -2,7 +2,7 @@
 
 // ============================================================
 // MobileFingerprintUnlock — ICredentialProviderCredential
-// Phase 7 — Windows Credential Provider (Test VM Only)
+// Phase 9B — Real End-to-End Windows Unlock (Test VM Only)
 // ============================================================
 
 #ifndef WIN32_LEAN_AND_MEAN
@@ -17,6 +17,7 @@
 #include <cstring>
 
 #include "ProviderGuid.h"
+#include "../lsa_authentication_package/LsaLogonBuffer.h"
 
 namespace MobileUnlock::CredentialProvider {
 
@@ -28,9 +29,8 @@ namespace MobileUnlock::CredentialProvider {
 // In tests:      creates a mock client returning controlled results.
 // ============================================================
 struct IpcStateToken {
-    bool     valid;
-    uint8_t  deviceId[32];
-    uint8_t  sessionNonce[32];
+    bool                                valid;
+    Lsa::MOBILE_UNLOCK_LSA_LOGON_BUFFER lsaBuffer;
 };
 
 class IIpcClientFactory {
@@ -59,14 +59,12 @@ public:
 //   Started in Advise(). Stopped in UnAdvise().
 //   Polls MobileUnlockService via IPC (5-second timeout per attempt).
 //   Updates FIELD_STATUS via ICredentialProviderCredentialEvents.
-//   Stores received MOBILE_UNLOCK_PHASE7_BUFFER internally (NEVER to Winlogon).
+//   Stores received MOBILE_UNLOCK_LSA_LOGON_BUFFER internally.
 //
 // GetSerialization():
-//   Phase 7: ALWAYS returns CPGSR_NO_CREDENTIAL_FINISHED + S_FALSE.
-//   No custom LSA authentication package exists in Phase 7.
-//   No serialization buffer is submitted to Winlogon.
-//   No authentication package ID is invented.
-//   Phase 8 introduces the LSA package; Phase 9A resolves the contract.
+//   Phase 9B: Resolves dynamic AuthenticationPackageId and returns
+//   CREDENTIAL_PROVIDER_CREDENTIAL_SERIALIZATION containing the
+//   180-byte MOBILE_UNLOCK_LSA_LOGON_BUFFER when auth state is ready.
 // ============================================================
 class MobileUnlockCredential final : public ICredentialProviderCredential {
 public:
@@ -140,16 +138,9 @@ public:
     // --------------------------------------------------------
     // GetSerialization
     //
-    // Phase 7: Always returns CPGSR_NO_CREDENTIAL_FINISHED.
-    //
-    // There is no custom LSA authentication package in Phase 7.
-    // There is no legitimate authentication-package serialization
-    // contract available. No buffer is submitted to Winlogon.
-    // No authentication package ID is invented.
-    //
-    // Phase 8 will introduce the LSA package.
-    // Phase 9A will determine the exact serialization contract,
-    // SECURITY_LOGON_TYPE, package ID, and auto-submit behavior.
+    // Returns CPGSR_RETURN_CREDENTIAL_FINISHED when auth is ready,
+    // populating CREDENTIAL_PROVIDER_CREDENTIAL_SERIALIZATION with
+    // the 180-byte MOBILE_UNLOCK_LSA_LOGON_BUFFER.
     // --------------------------------------------------------
     IFACEMETHODIMP GetSerialization(
         CREDENTIAL_PROVIDER_GET_SERIALIZATION_RESPONSE* pcpgsr,
@@ -164,10 +155,11 @@ public:
         CREDENTIAL_PROVIDER_STATUS_ICON* pcpsiOptionalStatusIcon) override;
 
     // --------------------------------------------------------
-    // For testing: expose internal auth state readiness.
+    // Testing Hooks
     // --------------------------------------------------------
     bool IsAuthStateReady() const { return m_authStateReady.load(); }
     const std::wstring& GetCurrentStatus() const { return m_statusText; }
+    void SetInternalAuthStateForTesting(const Lsa::MOBILE_UNLOCK_LSA_LOGON_BUFFER& buf);
 
 private:
     ~MobileUnlockCredential();
@@ -182,14 +174,10 @@ private:
     ICredentialProviderCredentialEvents*       m_pCredentialEvents;
     std::wstring                               m_statusText;
 
-    // --------------------------------------------------------
-    // Internal auth state — NEVER exposed to Winlogon.
-    // Used only by background thread and internal bookkeeping.
-    // Protected by m_stateLock.
-    // --------------------------------------------------------
+    // Internal auth state (180-byte LSA submission buffer)
     CRITICAL_SECTION                           m_stateLock;
     std::atomic<bool>                          m_authStateReady;
-    MOBILE_UNLOCK_PHASE7_BUFFER                m_internalAuthBuffer;
+    Lsa::MOBILE_UNLOCK_LSA_LOGON_BUFFER        m_internalAuthBuffer;
 
     // Background thread management
     HANDLE                                     m_hStatusThread;

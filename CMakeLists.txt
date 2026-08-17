@@ -123,6 +123,7 @@ add_executable(MobileUnlockTests
     windows/tests/CredentialProviderTest.cpp
     windows/tests/LsaAuthenticationPackageTest.cpp
     windows/tests/AuthenticationLaboratoryTest.cpp
+    windows/tests/EndToEndUnlockTest.cpp
 )
 target_link_libraries(MobileUnlockTests PRIVATE MobileUnlockCommon gtest gtest_main ole32 oleaut32)
 

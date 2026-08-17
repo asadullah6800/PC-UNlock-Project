@@ -47,8 +47,10 @@ public:
     IpcStateToken FetchAuthState(DWORD /*connectMs*/, DWORD /*readMs*/) override {
         IpcStateToken tok{};
         tok.valid = true;
-        std::memset(tok.deviceId,     0xAA, sizeof(tok.deviceId));
-        std::memset(tok.sessionNonce, 0xBB, sizeof(tok.sessionNonce));
+        tok.lsaBuffer.Magic   = MobileUnlock::Lsa::LSA_SUBMIT_BUFFER_MAGIC;
+        tok.lsaBuffer.Version = MobileUnlock::Lsa::LSA_SUBMIT_BUFFER_VERSION;
+        tok.lsaBuffer.Reserved = 0;
+        std::memset(tok.lsaBuffer.DeviceId, 0xAA, 16);
         callCount.fetch_add(1, std::memory_order_relaxed);
         return tok;
     }
@@ -338,36 +340,34 @@ TEST(CredentialProviderTest, GetSerializationAlwaysNoCredential) {
 }
 
 // ============================================================
-// Test 8: GetSerialization — buffer is NULL (never submitted)
+// Test 8: GetSerialization — returns 180-byte buffer when auth ready
 // ============================================================
-TEST(CredentialProviderTest, GetSerializationNeverSubmitsBuffer) {
-    // Even when auth state is "ready" (we manually trigger it by setting
-    // a success mock), GetSerialization must still NOT submit a buffer.
+TEST(CredentialProviderTest, GetSerializationSubmitsBufferWhenReady) {
     MockIpcSuccess mockIpc;
     auto* cred = new MobileUnlockCredential(&mockIpc);
     auto* events = new MockCredentialEvents();
 
     cred->Advise(events);
-    // Wait for background thread to run at least once and set auth ready
     Sleep(200);
 
-    CREDENTIAL_PROVIDER_GET_SERIALIZATION_RESPONSE cpgsr =
-        CPGSR_RETURN_CREDENTIAL_FINISHED;
+    EXPECT_TRUE(cred->IsAuthStateReady());
+
+    CREDENTIAL_PROVIDER_GET_SERIALIZATION_RESPONSE cpgsr = CPGSR_NO_CREDENTIAL_FINISHED;
     CREDENTIAL_PROVIDER_CREDENTIAL_SERIALIZATION cpcs{};
-    cpcs.cbSerialization  = 999; // Pre-set to non-zero to confirm it gets cleared
-    cpcs.rgbSerialization = reinterpret_cast<BYTE*>(0xDEADBEEF);
     PWSTR pszStatusText = nullptr;
-    CREDENTIAL_PROVIDER_STATUS_ICON cpsi = CPSI_SUCCESS;
+    CREDENTIAL_PROVIDER_STATUS_ICON cpsi = CPSI_NONE;
 
     HRESULT hr = cred->GetSerialization(&cpgsr, &cpcs, &pszStatusText, &cpsi);
 
-    // Phase 7: no serialization buffer submitted regardless of auth state
-    EXPECT_EQ(hr, S_FALSE);
-    EXPECT_EQ(cpgsr, CPGSR_NO_CREDENTIAL_FINISHED);
-    // Serialization buffer must be zero/null — no auth package ID invented
-    EXPECT_EQ(cpcs.cbSerialization,  0u);
-    EXPECT_EQ(cpcs.rgbSerialization, nullptr);
-    EXPECT_EQ(cpcs.ulAuthenticationPackage, 0u);
+    EXPECT_EQ(hr, S_OK);
+    EXPECT_EQ(cpgsr, CPGSR_RETURN_CREDENTIAL_FINISHED);
+    EXPECT_EQ(cpcs.cbSerialization, sizeof(MobileUnlock::Lsa::MOBILE_UNLOCK_LSA_LOGON_BUFFER));
+    EXPECT_NE(cpcs.rgbSerialization, nullptr);
+    EXPECT_GT(cpcs.ulAuthenticationPackage, 0u);
+
+    if (cpcs.rgbSerialization) {
+        CoTaskMemFree(cpcs.rgbSerialization);
+    }
 
     cred->UnAdvise();
     events->Release();

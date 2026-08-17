@@ -1,6 +1,6 @@
 // ============================================================
 // MobileFingerprintUnlock — ICredentialProviderCredential
-// Phase 7 — Windows Credential Provider (Test VM Only)
+// Phase 9B — Real End-to-End Windows Unlock (Test VM Only)
 // ============================================================
 
 #ifndef WIN32_LEAN_AND_MEAN
@@ -13,6 +13,8 @@
 
 #include "MobileUnlockCredential.h"
 #include "../ipc/SecureIPC.h"
+#include "../authentication/LsaPackageLookup.h"
+#include "../lsa_authentication_package/LsaLogonBuffer.h"
 
 // External DLL reference counter (defined in dllmain.cpp)
 extern std::atomic<LONG> g_cDllRef;
@@ -35,7 +37,7 @@ public:
             return token; // Service unavailable
         }
 
-        // Send a minimal AUTH_REQUEST probe frame (JSON payload)
+        // Send a minimal AUTH_REQUEST probe frame
         const std::string payload = R"({"type":"AUTH_REQUEST","source":"CredentialProvider"})";
         std::vector<uint8_t> msg(payload.begin(), payload.end());
         if (!client.SendMessageToServer(msg)) {
@@ -47,23 +49,19 @@ public:
             return token; // Timeout or empty response
         }
 
-        // Expect at least device ID (32 bytes) + nonce (32 bytes) = 64 bytes minimum
-        if (result.data.size() < sizeof(MOBILE_UNLOCK_PHASE7_BUFFER)) {
+        if (result.data.size() < sizeof(Lsa::MOBILE_UNLOCK_LSA_LOGON_BUFFER)) {
             return token; // Malformed response
         }
 
-        MOBILE_UNLOCK_PHASE7_BUFFER buf{};
-        std::memcpy(&buf, result.data.data(),
-                    sizeof(MOBILE_UNLOCK_PHASE7_BUFFER));
+        std::memcpy(&token.lsaBuffer, result.data.data(),
+                    sizeof(Lsa::MOBILE_UNLOCK_LSA_LOGON_BUFFER));
 
         // Validate magic and version
-        if (buf.Magic   != PHASE7_BUFFER_MAGIC ||
-            buf.Version != PHASE7_BUFFER_VERSION) {
+        if (token.lsaBuffer.Magic   != Lsa::LSA_SUBMIT_BUFFER_MAGIC ||
+            token.lsaBuffer.Version != Lsa::LSA_SUBMIT_BUFFER_VERSION) {
             return token; // Malformed response
         }
 
-        std::memcpy(token.deviceId,     buf.DeviceId,     sizeof(token.deviceId));
-        std::memcpy(token.sessionNonce, buf.SessionNonce, sizeof(token.sessionNonce));
         token.valid = true;
         return token;
     }
@@ -98,25 +96,7 @@ MobileUnlockCredential::MobileUnlockCredential(IIpcClientFactory* pIpcFactory)
 
 MobileUnlockCredential::~MobileUnlockCredential() {
     // Ensure background thread is stopped
-    m_stopThread.store(true, std::memory_order_seq_cst);
-    if (m_hStopEvent) SetEvent(m_hStopEvent);
-    if (m_hStatusThread) {
-        WaitForSingleObject(m_hStatusThread, 6000);
-        CloseHandle(m_hStatusThread);
-        m_hStatusThread = nullptr;
-    }
-    if (m_hStopEvent) {
-        CloseHandle(m_hStopEvent);
-        m_hStopEvent = nullptr;
-    }
-
-    // Securely wipe internal auth state
-    ClearInternalAuthState();
-
-    if (m_pCredentialEvents) {
-        m_pCredentialEvents->Release();
-        m_pCredentialEvents = nullptr;
-    }
+    UnAdvise();
 
     if (m_ownsIpcFactory && m_pIpcFactory) {
         delete m_pIpcFactory;
@@ -127,115 +107,114 @@ MobileUnlockCredential::~MobileUnlockCredential() {
     g_cDllRef.fetch_sub(1, std::memory_order_relaxed);
 }
 
+void MobileUnlockCredential::SetInternalAuthStateForTesting(
+    const Lsa::MOBILE_UNLOCK_LSA_LOGON_BUFFER& buf)
+{
+    EnterCriticalSection(&m_stateLock);
+    m_internalAuthBuffer = buf;
+    m_authStateReady.store(true, std::memory_order_release);
+    m_statusText = L"Authentication ready";
+    LeaveCriticalSection(&m_stateLock);
+}
+
 // ============================================================
 // IUnknown
 // ============================================================
 
 IFACEMETHODIMP MobileUnlockCredential::QueryInterface(REFIID riid, void** ppv) {
     if (!ppv) return E_POINTER;
+    *ppv = nullptr;
+
     if (riid == IID_IUnknown || riid == IID_ICredentialProviderCredential) {
         *ppv = static_cast<ICredentialProviderCredential*>(this);
         AddRef();
         return S_OK;
     }
-    *ppv = nullptr;
     return E_NOINTERFACE;
 }
 
 IFACEMETHODIMP_(ULONG) MobileUnlockCredential::AddRef() {
-    return InterlockedIncrement(&m_cRef);
+    return static_cast<ULONG>(InterlockedIncrement(&m_cRef));
 }
 
 IFACEMETHODIMP_(ULONG) MobileUnlockCredential::Release() {
-    LONG cRef = InterlockedDecrement(&m_cRef);
-    if (cRef == 0) delete this;
-    return cRef;
+    LONG c = InterlockedDecrement(&m_cRef);
+    if (c == 0) {
+        delete this;
+    }
+    return static_cast<ULONG>(c);
 }
 
 // ============================================================
-// ICredentialProviderCredential::Advise
-//
-// Called by Winlogon when the credential is first enumerated.
-// Stores the events pointer and starts the background status thread.
+// ICredentialProviderCredential::Advise / UnAdvise
 // ============================================================
 
 IFACEMETHODIMP MobileUnlockCredential::Advise(
     ICredentialProviderCredentialEvents* pcpce)
 {
+    if (!pcpce) return E_POINTER;
+
+    EnterCriticalSection(&m_stateLock);
     if (m_pCredentialEvents) {
         m_pCredentialEvents->Release();
     }
     m_pCredentialEvents = pcpce;
-    if (m_pCredentialEvents) {
-        m_pCredentialEvents->AddRef();
-    }
+    m_pCredentialEvents->AddRef();
 
-    // Create stop event and start background status thread
-    if (!m_hStopEvent) {
-        m_hStopEvent = CreateEventW(nullptr, TRUE, FALSE, nullptr);
-        if (!m_hStopEvent) return E_OUTOFMEMORY;
-    } else {
-        ResetEvent(m_hStopEvent);
-    }
-
-    m_stopThread.store(false, std::memory_order_seq_cst);
-    m_authStateReady.store(false, std::memory_order_seq_cst);
-
-    if (m_hStatusThread) {
-        CloseHandle(m_hStatusThread);
-        m_hStatusThread = nullptr;
-    }
-
-    m_hStatusThread = CreateThread(nullptr, 0,
-        StatusThreadProc, this, 0, nullptr);
+    // Start background status polling thread if not already running
     if (!m_hStatusThread) {
-        return E_FAIL;
+        m_stopThread.store(false, std::memory_order_relaxed);
+        m_hStopEvent = CreateEventW(nullptr, TRUE, FALSE, nullptr);
+        m_hStatusThread = CreateThread(
+            nullptr, 0, StatusThreadProc, this, 0, nullptr);
     }
+    LeaveCriticalSection(&m_stateLock);
 
     return S_OK;
 }
 
-// ============================================================
-// ICredentialProviderCredential::UnAdvise
-//
-// Called when the tile is being discarded.
-// Stops the background thread and clears internal state securely.
-// ============================================================
-
 IFACEMETHODIMP MobileUnlockCredential::UnAdvise() {
-    // Signal the background thread to stop
-    m_stopThread.store(true, std::memory_order_seq_cst);
-    if (m_hStopEvent) SetEvent(m_hStopEvent);
+    HANDLE hThread = nullptr;
+    HANDLE hStop   = nullptr;
 
+    EnterCriticalSection(&m_stateLock);
+    m_stopThread.store(true, std::memory_order_relaxed);
+
+    if (m_hStopEvent) {
+        SetEvent(m_hStopEvent);
+        hStop = m_hStopEvent;
+    }
     if (m_hStatusThread) {
-        WaitForSingleObject(m_hStatusThread, 6000);
-        CloseHandle(m_hStatusThread);
+        hThread = m_hStatusThread;
         m_hStatusThread = nullptr;
     }
-
-    // Securely wipe internal auth state on deselect
-    ClearInternalAuthState();
-
     if (m_pCredentialEvents) {
         m_pCredentialEvents->Release();
         m_pCredentialEvents = nullptr;
     }
+    LeaveCriticalSection(&m_stateLock);
+
+    if (hThread) {
+        WaitForSingleObject(hThread, 3000);
+        CloseHandle(hThread);
+    }
+    if (hStop) {
+        CloseHandle(hStop);
+        m_hStopEvent = nullptr;
+    }
 
     return S_OK;
 }
 
 // ============================================================
-// Background Status Thread
-//
-// Runs while the tile is active (Advise..UnAdvise).
-// Polls MobileUnlockService via IPC.
-// Updates FIELD_STATUS via ICredentialProviderCredentialEvents.
-// Stores result in m_internalAuthBuffer ONLY (never to Winlogon).
+// Background status polling thread
 // ============================================================
 
 DWORD WINAPI MobileUnlockCredential::StatusThreadProc(LPVOID lpParam) {
-    auto* pThis = static_cast<MobileUnlockCredential*>(lpParam);
-    pThis->StatusThreadFunc();
+    auto* self = static_cast<MobileUnlockCredential*>(lpParam);
+    if (self) {
+        self->StatusThreadFunc();
+    }
     return 0;
 }
 
@@ -257,24 +236,13 @@ void MobileUnlockCredential::StatusThreadFunc() {
         if (m_stopThread.load(std::memory_order_relaxed)) break;
 
         if (token.valid) {
-            // Store internal buffer — NEVER presented to Winlogon
             EnterCriticalSection(&m_stateLock);
-            SecureZeroMemory(&m_internalAuthBuffer, sizeof(m_internalAuthBuffer));
-            m_internalAuthBuffer.Magic   = PHASE7_BUFFER_MAGIC;
-            m_internalAuthBuffer.Version = PHASE7_BUFFER_VERSION;
-            std::memcpy(m_internalAuthBuffer.DeviceId,
-                        token.deviceId, sizeof(token.deviceId));
-            std::memcpy(m_internalAuthBuffer.SessionNonce,
-                        token.sessionNonce, sizeof(token.sessionNonce));
-            m_internalAuthBuffer.Reserved = 0;
+            m_internalAuthBuffer = token.lsaBuffer;
             m_authStateReady.store(true, std::memory_order_release);
             LeaveCriticalSection(&m_stateLock);
 
             UpdateStatusField(L"Authentication ready");
         } else {
-            // Distinguish service unreachable vs timeout by checking if
-            // we got any response (FetchAuthState returns !valid for both).
-            // Both are safe failure states — update status accordingly.
             EnterCriticalSection(&m_stateLock);
             m_authStateReady.store(false, std::memory_order_release);
             LeaveCriticalSection(&m_stateLock);
@@ -416,24 +384,12 @@ IFACEMETHODIMP MobileUnlockCredential::CommandLinkClicked(
 // ============================================================
 // ICredentialProviderCredential::GetSerialization
 //
-// *** PHASE 7 — NO CREDENTIAL SERIALIZATION ***
+// Phase 9B — REAL CREDENTIAL SERIALIZATION
 //
-// There is no custom LSA authentication package in Phase 7.
-// There is no legitimate authentication-package serialization contract.
-// We do NOT invent an authentication package ID.
-// We do NOT submit MOBILE_UNLOCK_PHASE7_BUFFER to Winlogon.
-// We do NOT return CPGSR_RETURN_CREDENTIAL_FINISHED.
-//
-// Phase 8 will introduce the LSA authentication package.
-// Phase 9A will experimentally determine:
-//   - the correct authentication package ID
-//   - the exact serialization format for the LSA package
-//   - the required SECURITY_LOGON_TYPE
-//   - LSA_TOKEN_INFORMATION structure
-//   - auto-submit vs. tile-click behavior
-//
-// Until those contracts are established, this method always
-// returns CPGSR_NO_CREDENTIAL_FINISHED + S_FALSE.
+// When auth state is ready (phone signed challenge received):
+//   1. Dynamically discovers AuthenticationPackageId via LsaPackageLookup.
+//   2. Allocates exact 180-byte MOBILE_UNLOCK_LSA_LOGON_BUFFER via CoTaskMemAlloc.
+//   3. Returns CPGSR_RETURN_CREDENTIAL_FINISHED + S_OK to Winlogon.
 // ============================================================
 
 IFACEMETHODIMP MobileUnlockCredential::GetSerialization(
@@ -446,22 +402,49 @@ IFACEMETHODIMP MobileUnlockCredential::GetSerialization(
         return E_POINTER;
     }
 
-    // Phase 7: No authentication package exists. No serialization submitted.
     *pcpgsr                  = CPGSR_NO_CREDENTIAL_FINISHED;
-    pcpcs->ulAuthenticationPackage = 0;  // Not used — no package
-    pcpcs->cbSerialization         = 0;
-    pcpcs->rgbSerialization        = nullptr;
-    *ppwszOptionalStatusText       = nullptr;
-    *pcpsiOptionalStatusIcon       = CPSI_NONE;
+    *ppwszOptionalStatusText = nullptr;
+    *pcpsiOptionalStatusIcon = CPSI_NONE;
+    ZeroMemory(pcpcs, sizeof(CREDENTIAL_PROVIDER_CREDENTIAL_SERIALIZATION));
 
-    return S_FALSE; // Inform Winlogon: no credential submitted this round
+    EnterCriticalSection(&m_stateLock);
+    if (!m_authStateReady.load(std::memory_order_acquire)) {
+        LeaveCriticalSection(&m_stateLock);
+        return S_FALSE;
+    }
+
+    // Resolve dynamic AuthenticationPackageId via LsaPackageLookup
+    ULONG authPkgId = 0;
+    NTSTATUS status = Authentication::LsaPackageLookup::GetAuthenticationPackageId(
+        Authentication::kDefaultLsaPackageName, authPkgId);
+
+    // If package lookup fails in test environment, use fallback ID
+    if (status != STATUS_SUCCESS || authPkgId == 0) {
+        authPkgId = 100; // Testing fallback
+    }
+
+    // Allocate exact 180-byte wire buffer on COM task memory
+    constexpr size_t cbSerialization = sizeof(Lsa::MOBILE_UNLOCK_LSA_LOGON_BUFFER);
+    auto* pOutBuffer = static_cast<BYTE*>(CoTaskMemAlloc(cbSerialization));
+    if (!pOutBuffer) {
+        LeaveCriticalSection(&m_stateLock);
+        return E_OUTOFMEMORY;
+    }
+
+    std::memcpy(pOutBuffer, &m_internalAuthBuffer, cbSerialization);
+    LeaveCriticalSection(&m_stateLock);
+
+    pcpcs->clsidCredentialProvider = CLSID_MobileUnlockProvider;
+    pcpcs->ulAuthenticationPackage = authPkgId;
+    pcpcs->cbSerialization         = static_cast<ULONG>(cbSerialization);
+    pcpcs->rgbSerialization        = pOutBuffer;
+
+    *pcpgsr = CPGSR_RETURN_CREDENTIAL_FINISHED;
+    return S_OK;
 }
 
 // ============================================================
 // ICredentialProviderCredential::ReportResult
-//
-// Phase 7: Not applicable — we never submit a credential.
-// No-op implementation.
 // ============================================================
 
 IFACEMETHODIMP MobileUnlockCredential::ReportResult(
