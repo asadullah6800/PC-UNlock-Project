@@ -19,6 +19,7 @@
 
 #ifndef _NTSTATUS_
 typedef LONG NTSTATUS;
+typedef NTSTATUS *PNTSTATUS;
 #define _NTSTATUS_
 #endif
 

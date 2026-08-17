@@ -74,6 +74,8 @@ set(WINDOWS_COMMON_SOURCES
     windows/crypto/CryptoManager.h
     windows/authentication/AuthenticationManager.cpp
     windows/authentication/AuthenticationManager.h
+    windows/authentication/LsaPackageLookup.cpp
+    windows/authentication/LsaPackageLookup.h
     windows/user_session_agent/UserSessionAgent.cpp
     windows/user_session_agent/UserSessionAgent.h
     windows/credential_provider/CredentialProvider.cpp
@@ -120,6 +122,7 @@ add_executable(MobileUnlockTests
     windows/tests/UserSessionAgentTest.cpp
     windows/tests/CredentialProviderTest.cpp
     windows/tests/LsaAuthenticationPackageTest.cpp
+    windows/tests/AuthenticationLaboratoryTest.cpp
 )
 target_link_libraries(MobileUnlockTests PRIVATE MobileUnlockCommon gtest gtest_main ole32 oleaut32)
 
