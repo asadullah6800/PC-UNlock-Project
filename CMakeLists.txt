@@ -70,6 +70,10 @@ set(WINDOWS_COMMON_SOURCES
     windows/pairing/DeviceRegistry.h
     windows/pairing/PairingManager.cpp
     windows/pairing/PairingManager.h
+    windows/crypto/CryptoManager.cpp
+    windows/crypto/CryptoManager.h
+    windows/authentication/AuthenticationManager.cpp
+    windows/authentication/AuthenticationManager.h
 )
 
 add_library(MobileUnlockCommon STATIC ${WINDOWS_COMMON_SOURCES} ${SHARED_HEADERS})
@@ -102,6 +106,9 @@ add_executable(MobileUnlockTests
     windows/tests/NetworkEngineTest.cpp
     windows/tests/MdnsTest.cpp
     windows/tests/PairingTest.cpp
+    windows/tests/CryptoManagerTest.cpp
+    windows/tests/AuthenticationManagerTest.cpp
+    windows/tests/DeterministicInteroperabilityTest.cpp
 )
 target_link_libraries(MobileUnlockTests PRIVATE MobileUnlockCommon gtest gtest_main)
 

@@ -248,6 +248,30 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+windows/authentication/AuthenticationManager.obj: windows/authentication/AuthenticationManager.cpp.obj
+.PHONY : windows/authentication/AuthenticationManager.obj
+
+# target to build an object file
+windows/authentication/AuthenticationManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj
+.PHONY : windows/authentication/AuthenticationManager.cpp.obj
+
+windows/authentication/AuthenticationManager.i: windows/authentication/AuthenticationManager.cpp.i
+.PHONY : windows/authentication/AuthenticationManager.i
+
+# target to preprocess a source file
+windows/authentication/AuthenticationManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.i
+.PHONY : windows/authentication/AuthenticationManager.cpp.i
+
+windows/authentication/AuthenticationManager.s: windows/authentication/AuthenticationManager.cpp.s
+.PHONY : windows/authentication/AuthenticationManager.s
+
+# target to generate assembly for a file
+windows/authentication/AuthenticationManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.s
+.PHONY : windows/authentication/AuthenticationManager.cpp.s
+
 windows/configuration/ConfigurationManager.obj: windows/configuration/ConfigurationManager.cpp.obj
 .PHONY : windows/configuration/ConfigurationManager.obj
 
@@ -271,6 +295,30 @@ windows/configuration/ConfigurationManager.s: windows/configuration/Configuratio
 windows/configuration/ConfigurationManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.s
 .PHONY : windows/configuration/ConfigurationManager.cpp.s
+
+windows/crypto/CryptoManager.obj: windows/crypto/CryptoManager.cpp.obj
+.PHONY : windows/crypto/CryptoManager.obj
+
+# target to build an object file
+windows/crypto/CryptoManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj
+.PHONY : windows/crypto/CryptoManager.cpp.obj
+
+windows/crypto/CryptoManager.i: windows/crypto/CryptoManager.cpp.i
+.PHONY : windows/crypto/CryptoManager.i
+
+# target to preprocess a source file
+windows/crypto/CryptoManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.i
+.PHONY : windows/crypto/CryptoManager.cpp.i
+
+windows/crypto/CryptoManager.s: windows/crypto/CryptoManager.cpp.s
+.PHONY : windows/crypto/CryptoManager.s
+
+# target to generate assembly for a file
+windows/crypto/CryptoManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.s
+.PHONY : windows/crypto/CryptoManager.cpp.s
 
 windows/diagnostics/DiagnosticManager.obj: windows/diagnostics/DiagnosticManager.cpp.obj
 .PHONY : windows/diagnostics/DiagnosticManager.obj
@@ -560,6 +608,30 @@ windows/service/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockService.dir\build.make CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.s
 .PHONY : windows/service/main.cpp.s
 
+windows/tests/AuthenticationManagerTest.obj: windows/tests/AuthenticationManagerTest.cpp.obj
+.PHONY : windows/tests/AuthenticationManagerTest.obj
+
+# target to build an object file
+windows/tests/AuthenticationManagerTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationManagerTest.cpp.obj
+.PHONY : windows/tests/AuthenticationManagerTest.cpp.obj
+
+windows/tests/AuthenticationManagerTest.i: windows/tests/AuthenticationManagerTest.cpp.i
+.PHONY : windows/tests/AuthenticationManagerTest.i
+
+# target to preprocess a source file
+windows/tests/AuthenticationManagerTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationManagerTest.cpp.i
+.PHONY : windows/tests/AuthenticationManagerTest.cpp.i
+
+windows/tests/AuthenticationManagerTest.s: windows/tests/AuthenticationManagerTest.cpp.s
+.PHONY : windows/tests/AuthenticationManagerTest.s
+
+# target to generate assembly for a file
+windows/tests/AuthenticationManagerTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationManagerTest.cpp.s
+.PHONY : windows/tests/AuthenticationManagerTest.cpp.s
+
 windows/tests/ConfigurationTest.obj: windows/tests/ConfigurationTest.cpp.obj
 .PHONY : windows/tests/ConfigurationTest.obj
 
@@ -583,6 +655,54 @@ windows/tests/ConfigurationTest.s: windows/tests/ConfigurationTest.cpp.s
 windows/tests/ConfigurationTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/ConfigurationTest.cpp.s
 .PHONY : windows/tests/ConfigurationTest.cpp.s
+
+windows/tests/CryptoManagerTest.obj: windows/tests/CryptoManagerTest.cpp.obj
+.PHONY : windows/tests/CryptoManagerTest.obj
+
+# target to build an object file
+windows/tests/CryptoManagerTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/CryptoManagerTest.cpp.obj
+.PHONY : windows/tests/CryptoManagerTest.cpp.obj
+
+windows/tests/CryptoManagerTest.i: windows/tests/CryptoManagerTest.cpp.i
+.PHONY : windows/tests/CryptoManagerTest.i
+
+# target to preprocess a source file
+windows/tests/CryptoManagerTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/CryptoManagerTest.cpp.i
+.PHONY : windows/tests/CryptoManagerTest.cpp.i
+
+windows/tests/CryptoManagerTest.s: windows/tests/CryptoManagerTest.cpp.s
+.PHONY : windows/tests/CryptoManagerTest.s
+
+# target to generate assembly for a file
+windows/tests/CryptoManagerTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/CryptoManagerTest.cpp.s
+.PHONY : windows/tests/CryptoManagerTest.cpp.s
+
+windows/tests/DeterministicInteroperabilityTest.obj: windows/tests/DeterministicInteroperabilityTest.cpp.obj
+.PHONY : windows/tests/DeterministicInteroperabilityTest.obj
+
+# target to build an object file
+windows/tests/DeterministicInteroperabilityTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.obj
+.PHONY : windows/tests/DeterministicInteroperabilityTest.cpp.obj
+
+windows/tests/DeterministicInteroperabilityTest.i: windows/tests/DeterministicInteroperabilityTest.cpp.i
+.PHONY : windows/tests/DeterministicInteroperabilityTest.i
+
+# target to preprocess a source file
+windows/tests/DeterministicInteroperabilityTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.i
+.PHONY : windows/tests/DeterministicInteroperabilityTest.cpp.i
+
+windows/tests/DeterministicInteroperabilityTest.s: windows/tests/DeterministicInteroperabilityTest.cpp.s
+.PHONY : windows/tests/DeterministicInteroperabilityTest.s
+
+# target to generate assembly for a file
+windows/tests/DeterministicInteroperabilityTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.s
+.PHONY : windows/tests/DeterministicInteroperabilityTest.cpp.s
 
 windows/tests/IPCTest.obj: windows/tests/IPCTest.cpp.obj
 .PHONY : windows/tests/IPCTest.obj
@@ -795,9 +915,15 @@ help:
 	@echo ... UserSessionAgent
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... windows/authentication/AuthenticationManager.obj
+	@echo ... windows/authentication/AuthenticationManager.i
+	@echo ... windows/authentication/AuthenticationManager.s
 	@echo ... windows/configuration/ConfigurationManager.obj
 	@echo ... windows/configuration/ConfigurationManager.i
 	@echo ... windows/configuration/ConfigurationManager.s
+	@echo ... windows/crypto/CryptoManager.obj
+	@echo ... windows/crypto/CryptoManager.i
+	@echo ... windows/crypto/CryptoManager.s
 	@echo ... windows/diagnostics/DiagnosticManager.obj
 	@echo ... windows/diagnostics/DiagnosticManager.i
 	@echo ... windows/diagnostics/DiagnosticManager.s
@@ -834,9 +960,18 @@ help:
 	@echo ... windows/service/main.obj
 	@echo ... windows/service/main.i
 	@echo ... windows/service/main.s
+	@echo ... windows/tests/AuthenticationManagerTest.obj
+	@echo ... windows/tests/AuthenticationManagerTest.i
+	@echo ... windows/tests/AuthenticationManagerTest.s
 	@echo ... windows/tests/ConfigurationTest.obj
 	@echo ... windows/tests/ConfigurationTest.i
 	@echo ... windows/tests/ConfigurationTest.s
+	@echo ... windows/tests/CryptoManagerTest.obj
+	@echo ... windows/tests/CryptoManagerTest.i
+	@echo ... windows/tests/CryptoManagerTest.s
+	@echo ... windows/tests/DeterministicInteroperabilityTest.obj
+	@echo ... windows/tests/DeterministicInteroperabilityTest.i
+	@echo ... windows/tests/DeterministicInteroperabilityTest.s
 	@echo ... windows/tests/IPCTest.obj
 	@echo ... windows/tests/IPCTest.i
 	@echo ... windows/tests/IPCTest.s

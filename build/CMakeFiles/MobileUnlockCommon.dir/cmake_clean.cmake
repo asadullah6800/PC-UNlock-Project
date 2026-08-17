@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj"
+  "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj.d"
   "CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.obj"
   "CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.obj.d"
+  "CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj"
+  "CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj.d"
   "CMakeFiles/MobileUnlockCommon.dir/windows/diagnostics/DiagnosticManager.cpp.obj"
   "CMakeFiles/MobileUnlockCommon.dir/windows/diagnostics/DiagnosticManager.cpp.obj.d"
   "CMakeFiles/MobileUnlockCommon.dir/windows/ipc/SecureIPC.cpp.obj"

@@ -1,5 +1,7 @@
 #include "MobileUnlockService.h"
 #include "../logging/SecurityAuditLogger.h"
+#include "../authentication/AuthenticationManager.h"
+#include "../pairing/PairingManager.h"
 #include <iostream>
 #include <string>
 
@@ -251,17 +253,52 @@ void MobileUnlockService::HandleIpcMessage(const std::vector<uint8_t>& message) 
     }
 }
 
-void MobileUnlockService::HandleNetworkFrame(uint64_t clientId, const Protocol::FrameHeader& header, const std::vector<uint8_t>& /*payload*/) {
+void MobileUnlockService::HandleNetworkFrame(uint64_t clientId, const Protocol::FrameHeader& header, const std::vector<uint8_t>& payload) {
     m_diagnosticManager.IncrementProcessedMessages();
 
     if (header.MessageType == static_cast<uint16_t>(Protocol::MessageType::PING)) {
         Protocol::FrameHeader pongHeader;
+        pongHeader.Magic          = Protocol::PROTOCOL_MAGIC;
+        pongHeader.MajorVersion   = Protocol::PROTOCOL_MAJOR_VERSION;
+        pongHeader.MinorVersion   = Protocol::PROTOCOL_MINOR_VERSION;
         pongHeader.MessageType    = static_cast<uint16_t>(Protocol::MessageType::PONG);
+        pongHeader.Reserved       = 0;
         pongHeader.MessageID      = header.MessageID;
         pongHeader.SequenceNumber = header.SequenceNumber + 1;
         pongHeader.PayloadLength  = 0;
 
         m_networkEngine->SendFrame(clientId, pongHeader, {});
+        return;
+    }
+
+    if (header.MessageType == static_cast<uint16_t>(Protocol::MessageType::AUTH_REQUEST)) {
+        Pairing::DeviceId deviceId;
+        // If payload contains 16-byte binary device ID or JSON
+        if (payload.size() >= 16) {
+            std::memcpy(deviceId.data(), payload.data(), 16);
+        } else {
+            // Try extracting deviceId from string if JSON
+            std::string payloadStr(payload.begin(), payload.end());
+            size_t pos = payloadStr.find("\"deviceId\":\"");
+            if (pos != std::string::npos) {
+                std::string devStr = payloadStr.substr(pos + 12, 36);
+                Pairing::DeviceIdFromString(devStr, deviceId);
+            }
+        }
+
+        std::vector<uint8_t> challengePayload;
+        Protocol::FrameHeader outHeader;
+        Auth::AuthenticationManager::Instance().HandleAuthRequest(deviceId, header, challengePayload, outHeader);
+        m_networkEngine->SendFrame(clientId, outHeader, challengePayload);
+        return;
+    }
+
+    if (header.MessageType == static_cast<uint16_t>(Protocol::MessageType::AUTH_RESPONSE)) {
+        std::vector<uint8_t> outcomePayload;
+        Protocol::FrameHeader outHeader;
+        Auth::AuthenticationManager::Instance().HandleAuthResponse(header, payload, outcomePayload, outHeader);
+        m_networkEngine->SendFrame(clientId, outHeader, outcomePayload);
+        return;
     }
 }
 

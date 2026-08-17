@@ -1,7 +1,130 @@
 {
-  "tests": 47,
+  "tests": 68,
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "InteroperabilityTest",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "TestA_OriginalPayloadAndSignaturePasses",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\DeterministicInteroperabilityTest.cpp",
+          "line": 144
+        },
+        {
+          "name": "TestB_ModifiedPayloadFails",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\DeterministicInteroperabilityTest.cpp",
+          "line": 154
+        },
+        {
+          "name": "TestC_ModifiedSignatureFails",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\DeterministicInteroperabilityTest.cpp",
+          "line": 167
+        },
+        {
+          "name": "TestD_WrongPublicKeyFails",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\DeterministicInteroperabilityTest.cpp",
+          "line": 180
+        },
+        {
+          "name": "TestE_WrongDeviceIdentityFails",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\DeterministicInteroperabilityTest.cpp",
+          "line": 196
+        },
+        {
+          "name": "TestF_ExpiredChallengeFails",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\DeterministicInteroperabilityTest.cpp",
+          "line": 223
+        },
+        {
+          "name": "TestG_ReplayedResponseFails",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\DeterministicInteroperabilityTest.cpp",
+          "line": 249
+        }
+      ]
+    },
+    {
+      "name": "AuthenticationManagerTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "FullValidAuthenticationFlowSucceeds",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationManagerTest.cpp",
+          "line": 77
+        },
+        {
+          "name": "ReplayAttackIsRejected",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationManagerTest.cpp",
+          "line": 147
+        },
+        {
+          "name": "ExpiredChallengeIsRejected",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationManagerTest.cpp",
+          "line": 197
+        },
+        {
+          "name": "UnknownDeviceIsRejected",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationManagerTest.cpp",
+          "line": 234
+        },
+        {
+          "name": "RevokedDeviceIsRejected",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationManagerTest.cpp",
+          "line": 250
+        },
+        {
+          "name": "RateLimitingAfterThreeFailures",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationManagerTest.cpp",
+          "line": 266
+        }
+      ]
+    },
+    {
+      "name": "CryptoManagerTest",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "GenerateRandomBytesProducesEntropy",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CryptoManagerTest.cpp",
+          "line": 30
+        },
+        {
+          "name": "ComputeSha256MatchesKnownVector",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CryptoManagerTest.cpp",
+          "line": 49
+        },
+        {
+          "name": "NormalizePublicKeyFormats",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CryptoManagerTest.cpp",
+          "line": 66
+        },
+        {
+          "name": "ValidCanonicalMessageSignatureVerifies",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CryptoManagerTest.cpp",
+          "line": 95
+        },
+        {
+          "name": "ModifiedCanonicalPayloadFailsVerification",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CryptoManagerTest.cpp",
+          "line": 124
+        },
+        {
+          "name": "ModifiedSignatureFailsVerification",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CryptoManagerTest.cpp",
+          "line": 167
+        },
+        {
+          "name": "WrongPublicKeyFailsVerification",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CryptoManagerTest.cpp",
+          "line": 191
+        },
+        {
+          "name": "InvalidSignatureLengthsAndZeroScalarsFail",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CryptoManagerTest.cpp",
+          "line": 213
+        }
+      ]
+    },
     {
       "name": "DeviceIdentityTest",
       "tests": 6,

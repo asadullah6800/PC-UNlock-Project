@@ -1,3 +1,192 @@
+add_test([=[InteroperabilityTest.TestA_OriginalPayloadAndSignaturePasses]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=InteroperabilityTest.TestA_OriginalPayloadAndSignaturePasses]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[InteroperabilityTest.TestA_OriginalPayloadAndSignaturePasses]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\DeterministicInteroperabilityTest.cpp:144]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[InteroperabilityTest.TestB_ModifiedPayloadFails]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=InteroperabilityTest.TestB_ModifiedPayloadFails]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[InteroperabilityTest.TestB_ModifiedPayloadFails]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\DeterministicInteroperabilityTest.cpp:154]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[InteroperabilityTest.TestC_ModifiedSignatureFails]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=InteroperabilityTest.TestC_ModifiedSignatureFails]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[InteroperabilityTest.TestC_ModifiedSignatureFails]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\DeterministicInteroperabilityTest.cpp:167]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[InteroperabilityTest.TestD_WrongPublicKeyFails]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=InteroperabilityTest.TestD_WrongPublicKeyFails]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[InteroperabilityTest.TestD_WrongPublicKeyFails]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\DeterministicInteroperabilityTest.cpp:180]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[InteroperabilityTest.TestE_WrongDeviceIdentityFails]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=InteroperabilityTest.TestE_WrongDeviceIdentityFails]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[InteroperabilityTest.TestE_WrongDeviceIdentityFails]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\DeterministicInteroperabilityTest.cpp:196]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[InteroperabilityTest.TestF_ExpiredChallengeFails]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=InteroperabilityTest.TestF_ExpiredChallengeFails]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[InteroperabilityTest.TestF_ExpiredChallengeFails]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\DeterministicInteroperabilityTest.cpp:223]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[InteroperabilityTest.TestG_ReplayedResponseFails]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=InteroperabilityTest.TestG_ReplayedResponseFails]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[InteroperabilityTest.TestG_ReplayedResponseFails]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\DeterministicInteroperabilityTest.cpp:249]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[AuthenticationManagerTest.FullValidAuthenticationFlowSucceeds]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=AuthenticationManagerTest.FullValidAuthenticationFlowSucceeds]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AuthenticationManagerTest.FullValidAuthenticationFlowSucceeds]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\AuthenticationManagerTest.cpp:77]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[AuthenticationManagerTest.ReplayAttackIsRejected]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=AuthenticationManagerTest.ReplayAttackIsRejected]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AuthenticationManagerTest.ReplayAttackIsRejected]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\AuthenticationManagerTest.cpp:147]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[AuthenticationManagerTest.ExpiredChallengeIsRejected]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=AuthenticationManagerTest.ExpiredChallengeIsRejected]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AuthenticationManagerTest.ExpiredChallengeIsRejected]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\AuthenticationManagerTest.cpp:197]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[AuthenticationManagerTest.UnknownDeviceIsRejected]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=AuthenticationManagerTest.UnknownDeviceIsRejected]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AuthenticationManagerTest.UnknownDeviceIsRejected]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\AuthenticationManagerTest.cpp:234]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[AuthenticationManagerTest.RevokedDeviceIsRejected]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=AuthenticationManagerTest.RevokedDeviceIsRejected]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AuthenticationManagerTest.RevokedDeviceIsRejected]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\AuthenticationManagerTest.cpp:250]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[AuthenticationManagerTest.RateLimitingAfterThreeFailures]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=AuthenticationManagerTest.RateLimitingAfterThreeFailures]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[AuthenticationManagerTest.RateLimitingAfterThreeFailures]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\AuthenticationManagerTest.cpp:266]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[CryptoManagerTest.GenerateRandomBytesProducesEntropy]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=CryptoManagerTest.GenerateRandomBytesProducesEntropy]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CryptoManagerTest.GenerateRandomBytesProducesEntropy]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\CryptoManagerTest.cpp:30]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[CryptoManagerTest.ComputeSha256MatchesKnownVector]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=CryptoManagerTest.ComputeSha256MatchesKnownVector]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CryptoManagerTest.ComputeSha256MatchesKnownVector]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\CryptoManagerTest.cpp:49]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[CryptoManagerTest.NormalizePublicKeyFormats]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=CryptoManagerTest.NormalizePublicKeyFormats]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CryptoManagerTest.NormalizePublicKeyFormats]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\CryptoManagerTest.cpp:66]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[CryptoManagerTest.ValidCanonicalMessageSignatureVerifies]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=CryptoManagerTest.ValidCanonicalMessageSignatureVerifies]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CryptoManagerTest.ValidCanonicalMessageSignatureVerifies]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\CryptoManagerTest.cpp:95]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[CryptoManagerTest.ModifiedCanonicalPayloadFailsVerification]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=CryptoManagerTest.ModifiedCanonicalPayloadFailsVerification]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CryptoManagerTest.ModifiedCanonicalPayloadFailsVerification]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\CryptoManagerTest.cpp:124]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[CryptoManagerTest.ModifiedSignatureFailsVerification]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=CryptoManagerTest.ModifiedSignatureFailsVerification]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CryptoManagerTest.ModifiedSignatureFailsVerification]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\CryptoManagerTest.cpp:167]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[CryptoManagerTest.WrongPublicKeyFailsVerification]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=CryptoManagerTest.WrongPublicKeyFailsVerification]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CryptoManagerTest.WrongPublicKeyFailsVerification]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\CryptoManagerTest.cpp:191]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
+add_test([=[CryptoManagerTest.InvalidSignatureLengthsAndZeroScalarsFail]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=CryptoManagerTest.InvalidSignatureLengthsAndZeroScalarsFail]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[CryptoManagerTest.InvalidSignatureLengthsAndZeroScalarsFail]=]
+  PROPERTIES
+    
+    DEF_SOURCE_LINE [==[C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\CryptoManagerTest.cpp:213]==]
+    WORKING_DIRECTORY [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build]==]
+    SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
+    
+)
 add_test([=[DeviceIdentityTest.GenerateIsNotEmpty]=]  [==[C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests.exe]==] [==[--gtest_filter=DeviceIdentityTest.GenerateIsNotEmpty]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[DeviceIdentityTest.GenerateIsNotEmpty]=]
   PROPERTIES
@@ -421,4 +610,4 @@ set_tests_properties([=[ProtocolValidationTest.TruncatedMessageRejection]=]
     SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==]
     
 )
-set(MobileUnlockTests_TESTS [==[DeviceIdentityTest.GenerateIsNotEmpty]==] [==[DeviceIdentityTest.GenerateIsUnique]==] [==[DeviceIdentityTest.ToStringLength36]==] [==[DeviceIdentityTest.RoundTripStringToBinary]==] [==[DeviceIdentityTest.FromStringRejectsMalformed]==] [==[DeviceIdentityTest.EmptyIdIsAllZeros]==] [==[SasPinTest.GeneratedPinIs6Digits]==] [==[SasPinTest.GeneratedPinsAreUnique]==] [==[SasPinTest.ValidatePinCorrectAccepted]==] [==[SasPinTest.ValidatePinWrongRejected]==] [==[SasPinTest.ValidatePinMaxAttemptsRejected]==] [==[SasPinTest.ExpiredPinRejected]==] [==[SasPinTest.InvalidFormatRejected]==] [==[PairingManagerTest.MalformedPairRequestRejected]==] [==[PairingManagerTest.ValidPairRequestProducesPairResponse]==] [==[PairingManagerTest.CorrectSasCompletesPairing]==] [==[PairingManagerTest.WrongSasRejectedWithAttemptCount]==] [==[PairingManagerTest.CancelPairingSessionClearsState]==] [==[PairingManagerTest.DuplicatePairRequestRejected]==] [==[PairingManagerTest.UnpairRequestRemovesDevice]==] [==[PairingManagerTest.MalformedPayloadCannotCrashService]==] [==[PairingManagerTest.ExpireStaleSessionsRemovesExpired]==] [==[DeviceRegistryTest.WriteReadRoundTrip]==] [==[DeviceRegistryTest.SetStatusToRevoked]==] [==[DeviceRegistryTest.DeleteNonExistentDeviceIsNotError]==] [==[DeviceRegistryTest.ReadNonExistentDeviceReturnsFileNotFound]==] [==[MdnsTest.PayloadSerializationAndDeserialization]==] [==[MdnsTest.MalformedPayloadRejection]==] [==[MdnsTest.ResponderLifecycle]==] [==[TlsContextTest.ServerCredentialsInitialization]==] [==[TlsContextTest.StrictTls13Enforcement]==] [==[NetworkEngineTest.ServerLifecycle]==] [==[NetworkEngineTest.RateLimiting]==] [==[NetworkEngineTest.ClientConnectAndReceiveFrame]==] [==[IPCTest.ServerClientConnectionLifecycle]==] [==[ConfigurationTest.DefaultValidation]==] [==[ConfigurationTest.InvalidPortValidation]==] [==[ConfigurationTest.InvalidTtlValidation]==] [==[ProtocolHeaderTest.ExactHeaderSize]==] [==[ProtocolHeaderTest.SerializeDeserializeHeader]==] [==[CanonicalMessageTest.ExactSignedMessageSize]==] [==[CanonicalMessageTest.SerializeDeserializeSignedMessage]==] [==[ProtocolValidationTest.InvalidMagicRejection]==] [==[ProtocolValidationTest.InvalidVersionRejection]==] [==[ProtocolValidationTest.InvalidOpcodeRejection]==] [==[ProtocolValidationTest.PayloadTooLargeRejection]==] [==[ProtocolValidationTest.TruncatedMessageRejection]==])
+set(MobileUnlockTests_TESTS [==[InteroperabilityTest.TestA_OriginalPayloadAndSignaturePasses]==] [==[InteroperabilityTest.TestB_ModifiedPayloadFails]==] [==[InteroperabilityTest.TestC_ModifiedSignatureFails]==] [==[InteroperabilityTest.TestD_WrongPublicKeyFails]==] [==[InteroperabilityTest.TestE_WrongDeviceIdentityFails]==] [==[InteroperabilityTest.TestF_ExpiredChallengeFails]==] [==[InteroperabilityTest.TestG_ReplayedResponseFails]==] [==[AuthenticationManagerTest.FullValidAuthenticationFlowSucceeds]==] [==[AuthenticationManagerTest.ReplayAttackIsRejected]==] [==[AuthenticationManagerTest.ExpiredChallengeIsRejected]==] [==[AuthenticationManagerTest.UnknownDeviceIsRejected]==] [==[AuthenticationManagerTest.RevokedDeviceIsRejected]==] [==[AuthenticationManagerTest.RateLimitingAfterThreeFailures]==] [==[CryptoManagerTest.GenerateRandomBytesProducesEntropy]==] [==[CryptoManagerTest.ComputeSha256MatchesKnownVector]==] [==[CryptoManagerTest.NormalizePublicKeyFormats]==] [==[CryptoManagerTest.ValidCanonicalMessageSignatureVerifies]==] [==[CryptoManagerTest.ModifiedCanonicalPayloadFailsVerification]==] [==[CryptoManagerTest.ModifiedSignatureFailsVerification]==] [==[CryptoManagerTest.WrongPublicKeyFailsVerification]==] [==[CryptoManagerTest.InvalidSignatureLengthsAndZeroScalarsFail]==] [==[DeviceIdentityTest.GenerateIsNotEmpty]==] [==[DeviceIdentityTest.GenerateIsUnique]==] [==[DeviceIdentityTest.ToStringLength36]==] [==[DeviceIdentityTest.RoundTripStringToBinary]==] [==[DeviceIdentityTest.FromStringRejectsMalformed]==] [==[DeviceIdentityTest.EmptyIdIsAllZeros]==] [==[SasPinTest.GeneratedPinIs6Digits]==] [==[SasPinTest.GeneratedPinsAreUnique]==] [==[SasPinTest.ValidatePinCorrectAccepted]==] [==[SasPinTest.ValidatePinWrongRejected]==] [==[SasPinTest.ValidatePinMaxAttemptsRejected]==] [==[SasPinTest.ExpiredPinRejected]==] [==[SasPinTest.InvalidFormatRejected]==] [==[PairingManagerTest.MalformedPairRequestRejected]==] [==[PairingManagerTest.ValidPairRequestProducesPairResponse]==] [==[PairingManagerTest.CorrectSasCompletesPairing]==] [==[PairingManagerTest.WrongSasRejectedWithAttemptCount]==] [==[PairingManagerTest.CancelPairingSessionClearsState]==] [==[PairingManagerTest.DuplicatePairRequestRejected]==] [==[PairingManagerTest.UnpairRequestRemovesDevice]==] [==[PairingManagerTest.MalformedPayloadCannotCrashService]==] [==[PairingManagerTest.ExpireStaleSessionsRemovesExpired]==] [==[DeviceRegistryTest.WriteReadRoundTrip]==] [==[DeviceRegistryTest.SetStatusToRevoked]==] [==[DeviceRegistryTest.DeleteNonExistentDeviceIsNotError]==] [==[DeviceRegistryTest.ReadNonExistentDeviceReturnsFileNotFound]==] [==[MdnsTest.PayloadSerializationAndDeserialization]==] [==[MdnsTest.MalformedPayloadRejection]==] [==[MdnsTest.ResponderLifecycle]==] [==[TlsContextTest.ServerCredentialsInitialization]==] [==[TlsContextTest.StrictTls13Enforcement]==] [==[NetworkEngineTest.ServerLifecycle]==] [==[NetworkEngineTest.RateLimiting]==] [==[NetworkEngineTest.ClientConnectAndReceiveFrame]==] [==[IPCTest.ServerClientConnectionLifecycle]==] [==[ConfigurationTest.DefaultValidation]==] [==[ConfigurationTest.InvalidPortValidation]==] [==[ConfigurationTest.InvalidTtlValidation]==] [==[ProtocolHeaderTest.ExactHeaderSize]==] [==[ProtocolHeaderTest.SerializeDeserializeHeader]==] [==[CanonicalMessageTest.ExactSignedMessageSize]==] [==[CanonicalMessageTest.SerializeDeserializeSignedMessage]==] [==[ProtocolValidationTest.InvalidMagicRejection]==] [==[ProtocolValidationTest.InvalidVersionRejection]==] [==[ProtocolValidationTest.InvalidOpcodeRejection]==] [==[ProtocolValidationTest.PayloadTooLargeRejection]==] [==[ProtocolValidationTest.TruncatedMessageRejection]==])

@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/AuthenticationManagerTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationManagerTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationManagerTest.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/ConfigurationTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/ConfigurationTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/ConfigurationTest.cpp.obj.d"
+  "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/CryptoManagerTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/CryptoManagerTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/CryptoManagerTest.cpp.obj.d"
+  "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/DeterministicInteroperabilityTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/IPCTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/MdnsTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/tests/NetworkEngineTest.cpp" "CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj" "gcc" "CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj.d"

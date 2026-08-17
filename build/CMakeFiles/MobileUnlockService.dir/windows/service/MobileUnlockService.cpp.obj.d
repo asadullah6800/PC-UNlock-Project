@@ -151,6 +151,21 @@ CMakeFiles/MobileUnlockService.dir/windows/service/MobileUnlockService.cpp.obj: 
  c:\mingw\include\secext.h c:\mingw\include\schannel.h \
  c:\mingw\include\wincrypt.h \
  c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\network\mdnsresponder.h \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\authentication\authenticationmanager.h \
+ C:/Users/AsadU/DRIVE_0/PCUNLO~1/PCUNLO~1/shared/protocol/SignedMessage.h \
+ C:/Users/AsadU/DRIVE_0/PCUNLO~1/PCUNLO~1/windows/pairing/DeviceIdentity.h \
+ c:\mingw\include\rpc.h c:\mingw\include\rpcdce.h \
+ c:\mingw\include\basetyps.h c:\mingw\include\rpcdcep.h \
+ c:\mingw\include\rpcnsi.h c:\mingw\include\rpcnterr.h \
+ C:/Users/AsadU/DRIVE_0/PCUNLO~1/PCUNLO~1/windows/pairing/DeviceRegistry.h \
+ c:\mingw\include\aclapi.h c:\mingw\include\accctrl.h \
+ C:/Users/AsadU/DRIVE_0/PCUNLO~1/PCUNLO~1/windows/crypto/CryptoManager.h \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\pairing\pairingmanager.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\map \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_tree.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_map.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_multimap.h \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\pairing\SasPin.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \

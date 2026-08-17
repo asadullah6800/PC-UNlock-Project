@@ -236,6 +236,36 @@ CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\pairing\PairingManager.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\pairing\PairingManager.cpp.s
 
+CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
+CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/crypto/CryptoManager.cpp
+CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\crypto\CryptoManager.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\crypto\CryptoManager.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\crypto\CryptoManager.cpp"
+
+CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\crypto\CryptoManager.cpp" > CMakeFiles\MobileUnlockCommon.dir\windows\crypto\CryptoManager.cpp.i
+
+CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\crypto\CryptoManager.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\crypto\CryptoManager.cpp.s
+
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/authentication/AuthenticationManager.cpp
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\authentication\AuthenticationManager.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\authentication\AuthenticationManager.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\authentication\AuthenticationManager.cpp"
+
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\authentication\AuthenticationManager.cpp" > CMakeFiles\MobileUnlockCommon.dir\windows\authentication\AuthenticationManager.cpp.i
+
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\authentication\AuthenticationManager.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\authentication\AuthenticationManager.cpp.s
+
 # Object files for target MobileUnlockCommon
 MobileUnlockCommon_OBJECTS = \
 "CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.obj" \
@@ -248,7 +278,9 @@ MobileUnlockCommon_OBJECTS = \
 "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceIdentity.cpp.obj" \
 "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj" \
 "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj" \
-"CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj"
+"CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj" \
+"CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj" \
+"CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj"
 
 # External object files for target MobileUnlockCommon
 MobileUnlockCommon_EXTERNAL_OBJECTS =
@@ -264,9 +296,11 @@ libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/pairing/Devic
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/pairing/SasPin.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/pairing/DeviceRegistry.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj
+libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj
+libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/build.make
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libMobileUnlockCommon.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libMobileUnlockCommon.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\MobileUnlockCommon.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MobileUnlockCommon.dir\link.txt --verbose=$(VERBOSE)
 
