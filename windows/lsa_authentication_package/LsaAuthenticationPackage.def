@@ -1,0 +1,6 @@
+LIBRARY "LsaAuthenticationPackage"
+
+EXPORTS
+    LsaApInitializePackage
+    LsaApLogonUserEx2
+    LsaApLogonTerminated

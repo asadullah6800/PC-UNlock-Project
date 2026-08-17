@@ -82,10 +82,12 @@ set(WINDOWS_COMMON_SOURCES
     windows/credential_provider/MobileUnlockCredential.h
     windows/credential_provider/ClassFactory.cpp
     windows/credential_provider/ClassFactory.h
+    windows/lsa_authentication_package/LsaPackage.cpp
+    windows/lsa_authentication_package/LsaPackage.h
 )
 
 add_library(MobileUnlockCommon STATIC ${WINDOWS_COMMON_SOURCES} ${SHARED_HEADERS})
-target_include_directories(MobileUnlockCommon PUBLIC windows windows/credential_provider shared)
+target_include_directories(MobileUnlockCommon PUBLIC windows windows/credential_provider windows/lsa_authentication_package shared)
 target_link_libraries(MobileUnlockCommon PUBLIC advapi32 wtsapi32 shell32 ws2_32 crypt32 secur32 user32)
 
 # Target 1: MobileUnlockService
@@ -117,6 +119,7 @@ add_executable(MobileUnlockTests
     windows/tests/DeterministicInteroperabilityTest.cpp
     windows/tests/UserSessionAgentTest.cpp
     windows/tests/CredentialProviderTest.cpp
+    windows/tests/LsaAuthenticationPackageTest.cpp
 )
 target_link_libraries(MobileUnlockTests PRIVATE MobileUnlockCommon gtest gtest_main ole32 oleaut32)
 
@@ -133,5 +136,18 @@ target_include_directories(CredentialProvider PRIVATE windows windows/credential
 target_link_libraries(CredentialProvider PRIVATE MobileUnlockCommon ole32 oleaut32)
 set_target_properties(CredentialProvider PROPERTIES
     OUTPUT_NAME "CredentialProvider"
+    SUFFIX ".dll"
+)
+
+# Target 5: LsaAuthenticationPackage DLL
+# VM-ONLY — Do not register or copy to System32 on the physical host machine.
+add_library(LsaAuthenticationPackage SHARED
+    windows/lsa_authentication_package/LsaExports.cpp
+    windows/lsa_authentication_package/LsaAuthenticationPackage.def
+)
+target_include_directories(LsaAuthenticationPackage PRIVATE windows windows/lsa_authentication_package shared)
+target_link_libraries(LsaAuthenticationPackage PRIVATE MobileUnlockCommon)
+set_target_properties(LsaAuthenticationPackage PROPERTIES
+    OUTPUT_NAME "LsaAuthenticationPackage"
     SUFFIX ".dll"
 )
