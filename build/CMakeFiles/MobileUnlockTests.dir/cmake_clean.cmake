@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.obj"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.obj.d"
+  "CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.obj"
+  "CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/MdnsTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/NetworkEngineTest.cpp.obj"

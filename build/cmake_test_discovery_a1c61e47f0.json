@@ -1,7 +1,93 @@
 {
-  "tests": 87,
+  "tests": 103,
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "LsaAuthenticationPackageTest",
+      "tests": 16,
+      "testsuite": [
+        {
+          "name": "PackageInitialization",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 119
+        },
+        {
+          "name": "PackageInitializationNullOutputRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 139
+        },
+        {
+          "name": "NullSubmitBufferRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 153
+        },
+        {
+          "name": "TruncatedSubmitBufferRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 170
+        },
+        {
+          "name": "UnknownMagicRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 189
+        },
+        {
+          "name": "UnsupportedVersionRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 209
+        },
+        {
+          "name": "NonZeroReservedRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 229
+        },
+        {
+          "name": "UnknownDeviceIdentityRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 250
+        },
+        {
+          "name": "RevokedDeviceIdentityRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 274
+        },
+        {
+          "name": "MissingPublicKeyRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 299
+        },
+        {
+          "name": "InvalidSignatureRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 328
+        },
+        {
+          "name": "DeviceIdMismatchRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 352
+        },
+        {
+          "name": "NonAuthOpcodeRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 377
+        },
+        {
+          "name": "ValidCanonicalSignatureAcceptance",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 402
+        },
+        {
+          "name": "NoPasswordInvariantCheck",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 480
+        },
+        {
+          "name": "LogonTerminatedCallbackSafe",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\LsaAuthenticationPackageTest.cpp",
+          "line": 501
+        }
+      ]
+    },
     {
       "name": "CredentialProviderTest",
       "tests": 15,

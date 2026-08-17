@@ -236,6 +236,19 @@ CredentialProvider/fast:
 .PHONY : CredentialProvider/fast
 
 #=============================================================================
+# Target rules for targets named LsaAuthenticationPackage
+
+# Build rule for target.
+LsaAuthenticationPackage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LsaAuthenticationPackage
+.PHONY : LsaAuthenticationPackage
+
+# fast build rule for target.
+LsaAuthenticationPackage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LsaAuthenticationPackage.dir\build.make CMakeFiles/LsaAuthenticationPackage.dir/build
+.PHONY : LsaAuthenticationPackage/fast
+
+#=============================================================================
 # Target rules for targets named gtest
 
 # Build rule for target.
@@ -500,6 +513,54 @@ windows/logging/SecurityAuditLogger.s: windows/logging/SecurityAuditLogger.cpp.s
 windows/logging/SecurityAuditLogger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/logging/SecurityAuditLogger.cpp.s
 .PHONY : windows/logging/SecurityAuditLogger.cpp.s
+
+windows/lsa_authentication_package/LsaExports.obj: windows/lsa_authentication_package/LsaExports.cpp.obj
+.PHONY : windows/lsa_authentication_package/LsaExports.obj
+
+# target to build an object file
+windows/lsa_authentication_package/LsaExports.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LsaAuthenticationPackage.dir\build.make CMakeFiles/LsaAuthenticationPackage.dir/windows/lsa_authentication_package/LsaExports.cpp.obj
+.PHONY : windows/lsa_authentication_package/LsaExports.cpp.obj
+
+windows/lsa_authentication_package/LsaExports.i: windows/lsa_authentication_package/LsaExports.cpp.i
+.PHONY : windows/lsa_authentication_package/LsaExports.i
+
+# target to preprocess a source file
+windows/lsa_authentication_package/LsaExports.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LsaAuthenticationPackage.dir\build.make CMakeFiles/LsaAuthenticationPackage.dir/windows/lsa_authentication_package/LsaExports.cpp.i
+.PHONY : windows/lsa_authentication_package/LsaExports.cpp.i
+
+windows/lsa_authentication_package/LsaExports.s: windows/lsa_authentication_package/LsaExports.cpp.s
+.PHONY : windows/lsa_authentication_package/LsaExports.s
+
+# target to generate assembly for a file
+windows/lsa_authentication_package/LsaExports.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LsaAuthenticationPackage.dir\build.make CMakeFiles/LsaAuthenticationPackage.dir/windows/lsa_authentication_package/LsaExports.cpp.s
+.PHONY : windows/lsa_authentication_package/LsaExports.cpp.s
+
+windows/lsa_authentication_package/LsaPackage.obj: windows/lsa_authentication_package/LsaPackage.cpp.obj
+.PHONY : windows/lsa_authentication_package/LsaPackage.obj
+
+# target to build an object file
+windows/lsa_authentication_package/LsaPackage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.obj
+.PHONY : windows/lsa_authentication_package/LsaPackage.cpp.obj
+
+windows/lsa_authentication_package/LsaPackage.i: windows/lsa_authentication_package/LsaPackage.cpp.i
+.PHONY : windows/lsa_authentication_package/LsaPackage.i
+
+# target to preprocess a source file
+windows/lsa_authentication_package/LsaPackage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.i
+.PHONY : windows/lsa_authentication_package/LsaPackage.cpp.i
+
+windows/lsa_authentication_package/LsaPackage.s: windows/lsa_authentication_package/LsaPackage.cpp.s
+.PHONY : windows/lsa_authentication_package/LsaPackage.s
+
+# target to generate assembly for a file
+windows/lsa_authentication_package/LsaPackage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.s
+.PHONY : windows/lsa_authentication_package/LsaPackage.cpp.s
 
 windows/network/MdnsResponder.obj: windows/network/MdnsResponder.cpp.obj
 .PHONY : windows/network/MdnsResponder.obj
@@ -861,6 +922,30 @@ windows/tests/IPCTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.s
 .PHONY : windows/tests/IPCTest.cpp.s
 
+windows/tests/LsaAuthenticationPackageTest.obj: windows/tests/LsaAuthenticationPackageTest.cpp.obj
+.PHONY : windows/tests/LsaAuthenticationPackageTest.obj
+
+# target to build an object file
+windows/tests/LsaAuthenticationPackageTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.obj
+.PHONY : windows/tests/LsaAuthenticationPackageTest.cpp.obj
+
+windows/tests/LsaAuthenticationPackageTest.i: windows/tests/LsaAuthenticationPackageTest.cpp.i
+.PHONY : windows/tests/LsaAuthenticationPackageTest.i
+
+# target to preprocess a source file
+windows/tests/LsaAuthenticationPackageTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.i
+.PHONY : windows/tests/LsaAuthenticationPackageTest.cpp.i
+
+windows/tests/LsaAuthenticationPackageTest.s: windows/tests/LsaAuthenticationPackageTest.cpp.s
+.PHONY : windows/tests/LsaAuthenticationPackageTest.s
+
+# target to generate assembly for a file
+windows/tests/LsaAuthenticationPackageTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.s
+.PHONY : windows/tests/LsaAuthenticationPackageTest.cpp.s
+
 windows/tests/MdnsTest.obj: windows/tests/MdnsTest.cpp.obj
 .PHONY : windows/tests/MdnsTest.obj
 
@@ -1067,6 +1152,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... CredentialProvider
+	@echo ... LsaAuthenticationPackage
 	@echo ... MobileUnlockCommon
 	@echo ... MobileUnlockService
 	@echo ... MobileUnlockTests
@@ -1103,6 +1189,12 @@ help:
 	@echo ... windows/logging/SecurityAuditLogger.obj
 	@echo ... windows/logging/SecurityAuditLogger.i
 	@echo ... windows/logging/SecurityAuditLogger.s
+	@echo ... windows/lsa_authentication_package/LsaExports.obj
+	@echo ... windows/lsa_authentication_package/LsaExports.i
+	@echo ... windows/lsa_authentication_package/LsaExports.s
+	@echo ... windows/lsa_authentication_package/LsaPackage.obj
+	@echo ... windows/lsa_authentication_package/LsaPackage.i
+	@echo ... windows/lsa_authentication_package/LsaPackage.s
 	@echo ... windows/network/MdnsResponder.obj
 	@echo ... windows/network/MdnsResponder.i
 	@echo ... windows/network/MdnsResponder.s
@@ -1148,6 +1240,9 @@ help:
 	@echo ... windows/tests/IPCTest.obj
 	@echo ... windows/tests/IPCTest.i
 	@echo ... windows/tests/IPCTest.s
+	@echo ... windows/tests/LsaAuthenticationPackageTest.obj
+	@echo ... windows/tests/LsaAuthenticationPackageTest.i
+	@echo ... windows/tests/LsaAuthenticationPackageTest.s
 	@echo ... windows/tests/MdnsTest.obj
 	@echo ... windows/tests/MdnsTest.i
 	@echo ... windows/tests/MdnsTest.s

@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\LsaAuthenticationPackage.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\LsaAuthenticationPackage.dir/objects.a @CMakeFiles\LsaAuthenticationPackage.dir\objects1.rsp
+C:\MinGW\bin\c++.exe -g -shared "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\lsa_authentication_package\LsaAuthenticationPackage.def" -o libLsaAuthenticationPackage.dll -Wl,--out-implib,libLsaAuthenticationPackage.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\LsaAuthenticationPackage.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\LsaAuthenticationPackage.dir\linkLibs.rsp

@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MobileUnlockCommon.dir/windows/ipc/SecureIPC.cpp.obj.d"
   "CMakeFiles/MobileUnlockCommon.dir/windows/logging/SecurityAuditLogger.cpp.obj"
   "CMakeFiles/MobileUnlockCommon.dir/windows/logging/SecurityAuditLogger.cpp.obj.d"
+  "CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.obj"
+  "CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.obj.d"
   "CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj"
   "CMakeFiles/MobileUnlockCommon.dir/windows/network/MdnsResponder.cpp.obj.d"
   "CMakeFiles/MobileUnlockCommon.dir/windows/network/NetworkEngine.cpp.obj"
