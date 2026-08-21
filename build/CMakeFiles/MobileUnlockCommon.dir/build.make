@@ -266,11 +266,26 @@ CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\authentication\AuthenticationManager.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\authentication\AuthenticationManager.cpp.s
 
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/authentication/LsaPackageLookup.cpp
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\authentication\LsaPackageLookup.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\authentication\LsaPackageLookup.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\authentication\LsaPackageLookup.cpp"
+
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\authentication\LsaPackageLookup.cpp" > CMakeFiles\MobileUnlockCommon.dir\windows\authentication\LsaPackageLookup.cpp.i
+
+CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\authentication\LsaPackageLookup.cpp" -o CMakeFiles\MobileUnlockCommon.dir\windows\authentication\LsaPackageLookup.cpp.s
+
 CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/flags.make
 CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
 CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/user_session_agent/UserSessionAgent.cpp
 CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\user_session_agent\UserSessionAgent.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\user_session_agent\UserSessionAgent.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\user_session_agent\UserSessionAgent.cpp"
 
 CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.i: cmake_force
@@ -285,7 +300,7 @@ CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/credential_provider/CredentialProvider.cpp
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\credential_provider\CredentialProvider.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\credential_provider\CredentialProvider.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\credential_provider\CredentialProvider.cpp"
 
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.i: cmake_force
@@ -300,7 +315,7 @@ CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCreden
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/credential_provider/MobileUnlockCredential.cpp
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\credential_provider\MobileUnlockCredential.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\credential_provider\MobileUnlockCredential.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\credential_provider\MobileUnlockCredential.cpp"
 
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.i: cmake_force
@@ -315,7 +330,7 @@ CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.o
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/credential_provider/ClassFactory.cpp
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\credential_provider\ClassFactory.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\credential_provider\ClassFactory.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\credential_provider\ClassFactory.cpp"
 
 CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.i: cmake_force
@@ -330,7 +345,7 @@ CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.
 CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/includes_CXX.rsp
 CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/lsa_authentication_package/LsaPackage.cpp
 CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.obj: CMakeFiles/MobileUnlockCommon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.obj -MF CMakeFiles\MobileUnlockCommon.dir\windows\lsa_authentication_package\LsaPackage.cpp.obj.d -o CMakeFiles\MobileUnlockCommon.dir\windows\lsa_authentication_package\LsaPackage.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\lsa_authentication_package\LsaPackage.cpp"
 
 CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.i: cmake_force
@@ -356,6 +371,7 @@ MobileUnlockCommon_OBJECTS = \
 "CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj" \
 "CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj" \
 "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj" \
+"CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj" \
 "CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj" \
 "CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj" \
 "CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.obj" \
@@ -378,6 +394,7 @@ libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/pairing/Devic
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/pairing/PairingManager.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/crypto/CryptoManager.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj
+libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/user_session_agent/UserSessionAgent.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCredential.cpp.obj
@@ -385,7 +402,7 @@ libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/credential_pr
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/windows/lsa_authentication_package/LsaPackage.cpp.obj
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/build.make
 libMobileUnlockCommon.a: CMakeFiles/MobileUnlockCommon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX static library libMobileUnlockCommon.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX static library libMobileUnlockCommon.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\MobileUnlockCommon.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MobileUnlockCommon.dir\link.txt --verbose=$(VERBOSE)
 

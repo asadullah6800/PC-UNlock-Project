@@ -266,6 +266,36 @@ CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\LsaAuthenticationPackageTest.cpp" -o CMakeFiles\MobileUnlockTests.dir\windows\tests\LsaAuthenticationPackageTest.cpp.s
 
+CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/flags.make
+CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/tests/AuthenticationLaboratoryTest.cpp
+CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj -MF CMakeFiles\MobileUnlockTests.dir\windows\tests\AuthenticationLaboratoryTest.cpp.obj.d -o CMakeFiles\MobileUnlockTests.dir\windows\tests\AuthenticationLaboratoryTest.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\AuthenticationLaboratoryTest.cpp"
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\AuthenticationLaboratoryTest.cpp" > CMakeFiles\MobileUnlockTests.dir\windows\tests\AuthenticationLaboratoryTest.cpp.i
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\AuthenticationLaboratoryTest.cpp" -o CMakeFiles\MobileUnlockTests.dir\windows\tests\AuthenticationLaboratoryTest.cpp.s
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/flags.make
+CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/includes_CXX.rsp
+CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj: C:/Users/AsadU/DRIVE_0/PC\ unlock/PC\ UNlock\ Project/windows/tests/EndToEndUnlockTest.cpp
+CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj: CMakeFiles/MobileUnlockTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj -MF CMakeFiles\MobileUnlockTests.dir\windows\tests\EndToEndUnlockTest.cpp.obj.d -o CMakeFiles\MobileUnlockTests.dir\windows\tests\EndToEndUnlockTest.cpp.obj -c "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\EndToEndUnlockTest.cpp"
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\EndToEndUnlockTest.cpp" > CMakeFiles\MobileUnlockTests.dir\windows\tests\EndToEndUnlockTest.cpp.i
+
+CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\windows\tests\EndToEndUnlockTest.cpp" -o CMakeFiles\MobileUnlockTests.dir\windows\tests\EndToEndUnlockTest.cpp.s
+
 # Object files for target MobileUnlockTests
 MobileUnlockTests_OBJECTS = \
 "CMakeFiles/MobileUnlockTests.dir/windows/tests/main.cpp.obj" \
@@ -280,7 +310,9 @@ MobileUnlockTests_OBJECTS = \
 "CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.obj" \
 "CMakeFiles/MobileUnlockTests.dir/windows/tests/UserSessionAgentTest.cpp.obj" \
 "CMakeFiles/MobileUnlockTests.dir/windows/tests/CredentialProviderTest.cpp.obj" \
-"CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.obj"
+"CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.obj" \
+"CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj" \
+"CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj"
 
 # External object files for target MobileUnlockTests
 MobileUnlockTests_EXTERNAL_OBJECTS =
@@ -298,6 +330,8 @@ MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/Determinis
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/UserSessionAgentTest.cpp.obj
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/CredentialProviderTest.cpp.obj
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.obj
+MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj
+MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/build.make
 MobileUnlockTests.exe: libMobileUnlockCommon.a
 MobileUnlockTests.exe: lib/libgtestd.a
@@ -306,7 +340,7 @@ MobileUnlockTests.exe: lib/libgtestd.a
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/linkLibs.rsp
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/objects1.rsp
 MobileUnlockTests.exe: CMakeFiles/MobileUnlockTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable MobileUnlockTests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\AsadU\DRIVE_0\PC unlock\PC UNlock Project\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable MobileUnlockTests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MobileUnlockTests.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\CMake\bin\cmake.exe" -P "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/build/MobileUnlockTests_e3b0c442_discovery.cmake" -- 
 

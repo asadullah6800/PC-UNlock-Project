@@ -205,5 +205,6 @@ CMakeFiles/MobileUnlockTests.dir/windows/tests/CredentialProviderTest.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstring \
  c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\credential_provider\providerguid.h \
  c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\credential_provider\mobileunlockcredential.h \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\lsa_authentication_package\lsalogonbuffer.h \
  c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\credential_provider\credentialprovider.h \
  c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\credential_provider\classfactory.h

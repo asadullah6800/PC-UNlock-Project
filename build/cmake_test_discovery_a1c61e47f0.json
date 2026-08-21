@@ -1,7 +1,109 @@
 {
-  "tests": 103,
+  "tests": 121,
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "EndToEndUnlockTest",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "CredentialProviderReturnsRealSerializationWhenAuthReady",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\EndToEndUnlockTest.cpp",
+          "line": 155
+        },
+        {
+          "name": "CredentialProviderRejectsSerializationWhenNoAuth",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\EndToEndUnlockTest.cpp",
+          "line": 192
+        },
+        {
+          "name": "FullChainEndToEndUnlockSimulation",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\EndToEndUnlockTest.cpp",
+          "line": 215
+        },
+        {
+          "name": "NegativeTest_WrongDeviceIdentity",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\EndToEndUnlockTest.cpp",
+          "line": 288
+        },
+        {
+          "name": "NegativeTest_CorruptedSignature",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\EndToEndUnlockTest.cpp",
+          "line": 305
+        },
+        {
+          "name": "NegativeTest_RevokedDevice",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\EndToEndUnlockTest.cpp",
+          "line": 322
+        },
+        {
+          "name": "ThreeConsecutiveUnlockRepetitions",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\EndToEndUnlockTest.cpp",
+          "line": 341
+        },
+        {
+          "name": "ZeroPasswordIntegrityCheck",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\EndToEndUnlockTest.cpp",
+          "line": 387
+        }
+      ]
+    },
+    {
+      "name": "AuthenticationLaboratoryTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "ExperimentA_CredentialProviderTileAppears",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationLaboratoryTest.cpp",
+          "line": 158
+        },
+        {
+          "name": "ExperimentB_UsageScenarioHandling",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationLaboratoryTest.cpp",
+          "line": 205
+        },
+        {
+          "name": "ExperimentC_LsaPackageLookupAndSerializationWireBuffer",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationLaboratoryTest.cpp",
+          "line": 227
+        },
+        {
+          "name": "ExperimentD_ValidAuthenticationFullChain",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationLaboratoryTest.cpp",
+          "line": 250
+        },
+        {
+          "name": "ExperimentE_WrongDeviceIdentityRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationLaboratoryTest.cpp",
+          "line": 294
+        },
+        {
+          "name": "ExperimentF_InvalidSignatureRejection",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationLaboratoryTest.cpp",
+          "line": 311
+        },
+        {
+          "name": "ExperimentG_TimestampValidation",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationLaboratoryTest.cpp",
+          "line": 327
+        },
+        {
+          "name": "ExperimentH_ReplayAnalysis",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationLaboratoryTest.cpp",
+          "line": 348
+        },
+        {
+          "name": "ExperimentI_AutoSubmitSemantics",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationLaboratoryTest.cpp",
+          "line": 367
+        },
+        {
+          "name": "ExperimentJ_LogonTypeMatrix",
+          "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\AuthenticationLaboratoryTest.cpp",
+          "line": 386
+        }
+      ]
+    },
     {
       "name": "LsaAuthenticationPackageTest",
       "tests": 16,
@@ -95,52 +197,52 @@
         {
           "name": "ProviderCreation",
           "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
-          "line": 144
+          "line": 146
         },
         {
           "name": "ComLifetimeRefCounting",
           "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
-          "line": 155
+          "line": 157
         },
         {
           "name": "CredentialEnumeration",
           "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
-          "line": 167
+          "line": 169
         },
         {
           "name": "CredentialEnumerationUnlockWorkstation",
           "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
-          "line": 190
+          "line": 192
         },
         {
           "name": "UnsupportedScenarioRejected",
           "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
-          "line": 204
+          "line": 206
         },
         {
           "name": "FieldDescriptorCorrectness",
           "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
-          "line": 220
+          "line": 222
         },
         {
           "name": "FieldValueRetrieval",
           "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
-          "line": 265
+          "line": 267
         },
         {
           "name": "AdviseUnAdvise",
           "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
-          "line": 295
+          "line": 297
         },
         {
           "name": "GetSerializationAlwaysNoCredential",
           "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
-          "line": 320
+          "line": 322
         },
         {
-          "name": "GetSerializationNeverSubmitsBuffer",
+          "name": "GetSerializationSubmitsBufferWhenReady",
           "file": "C:\\Users\\AsadU\\DRIVE_0\\PC unlock\\PC UNlock Project\\windows\\tests\\CredentialProviderTest.cpp",
-          "line": 343
+          "line": 345
         },
         {
           "name": "GetSerializationIpcTimeout",

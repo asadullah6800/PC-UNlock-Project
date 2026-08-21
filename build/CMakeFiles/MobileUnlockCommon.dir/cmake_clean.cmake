@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj"
   "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj.d"
+  "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj"
+  "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj.d"
   "CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.obj"
   "CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.obj.d"
   "CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.obj"

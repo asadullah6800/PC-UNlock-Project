@@ -298,6 +298,30 @@ windows/authentication/AuthenticationManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.s
 .PHONY : windows/authentication/AuthenticationManager.cpp.s
 
+windows/authentication/LsaPackageLookup.obj: windows/authentication/LsaPackageLookup.cpp.obj
+.PHONY : windows/authentication/LsaPackageLookup.obj
+
+# target to build an object file
+windows/authentication/LsaPackageLookup.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj
+.PHONY : windows/authentication/LsaPackageLookup.cpp.obj
+
+windows/authentication/LsaPackageLookup.i: windows/authentication/LsaPackageLookup.cpp.i
+.PHONY : windows/authentication/LsaPackageLookup.i
+
+# target to preprocess a source file
+windows/authentication/LsaPackageLookup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.i
+.PHONY : windows/authentication/LsaPackageLookup.cpp.i
+
+windows/authentication/LsaPackageLookup.s: windows/authentication/LsaPackageLookup.cpp.s
+.PHONY : windows/authentication/LsaPackageLookup.s
+
+# target to generate assembly for a file
+windows/authentication/LsaPackageLookup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockCommon.dir\build.make CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.s
+.PHONY : windows/authentication/LsaPackageLookup.cpp.s
+
 windows/configuration/ConfigurationManager.obj: windows/configuration/ConfigurationManager.cpp.obj
 .PHONY : windows/configuration/ConfigurationManager.obj
 
@@ -778,6 +802,30 @@ windows/service/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockService.dir\build.make CMakeFiles/MobileUnlockService.dir/windows/service/main.cpp.s
 .PHONY : windows/service/main.cpp.s
 
+windows/tests/AuthenticationLaboratoryTest.obj: windows/tests/AuthenticationLaboratoryTest.cpp.obj
+.PHONY : windows/tests/AuthenticationLaboratoryTest.obj
+
+# target to build an object file
+windows/tests/AuthenticationLaboratoryTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj
+.PHONY : windows/tests/AuthenticationLaboratoryTest.cpp.obj
+
+windows/tests/AuthenticationLaboratoryTest.i: windows/tests/AuthenticationLaboratoryTest.cpp.i
+.PHONY : windows/tests/AuthenticationLaboratoryTest.i
+
+# target to preprocess a source file
+windows/tests/AuthenticationLaboratoryTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.i
+.PHONY : windows/tests/AuthenticationLaboratoryTest.cpp.i
+
+windows/tests/AuthenticationLaboratoryTest.s: windows/tests/AuthenticationLaboratoryTest.cpp.s
+.PHONY : windows/tests/AuthenticationLaboratoryTest.s
+
+# target to generate assembly for a file
+windows/tests/AuthenticationLaboratoryTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.s
+.PHONY : windows/tests/AuthenticationLaboratoryTest.cpp.s
+
 windows/tests/AuthenticationManagerTest.obj: windows/tests/AuthenticationManagerTest.cpp.obj
 .PHONY : windows/tests/AuthenticationManagerTest.obj
 
@@ -897,6 +945,30 @@ windows/tests/DeterministicInteroperabilityTest.s: windows/tests/DeterministicIn
 windows/tests/DeterministicInteroperabilityTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.s
 .PHONY : windows/tests/DeterministicInteroperabilityTest.cpp.s
+
+windows/tests/EndToEndUnlockTest.obj: windows/tests/EndToEndUnlockTest.cpp.obj
+.PHONY : windows/tests/EndToEndUnlockTest.obj
+
+# target to build an object file
+windows/tests/EndToEndUnlockTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj
+.PHONY : windows/tests/EndToEndUnlockTest.cpp.obj
+
+windows/tests/EndToEndUnlockTest.i: windows/tests/EndToEndUnlockTest.cpp.i
+.PHONY : windows/tests/EndToEndUnlockTest.i
+
+# target to preprocess a source file
+windows/tests/EndToEndUnlockTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.i
+.PHONY : windows/tests/EndToEndUnlockTest.cpp.i
+
+windows/tests/EndToEndUnlockTest.s: windows/tests/EndToEndUnlockTest.cpp.s
+.PHONY : windows/tests/EndToEndUnlockTest.s
+
+# target to generate assembly for a file
+windows/tests/EndToEndUnlockTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MobileUnlockTests.dir\build.make CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.s
+.PHONY : windows/tests/EndToEndUnlockTest.cpp.s
 
 windows/tests/IPCTest.obj: windows/tests/IPCTest.cpp.obj
 .PHONY : windows/tests/IPCTest.obj
@@ -1162,6 +1234,9 @@ help:
 	@echo ... windows/authentication/AuthenticationManager.obj
 	@echo ... windows/authentication/AuthenticationManager.i
 	@echo ... windows/authentication/AuthenticationManager.s
+	@echo ... windows/authentication/LsaPackageLookup.obj
+	@echo ... windows/authentication/LsaPackageLookup.i
+	@echo ... windows/authentication/LsaPackageLookup.s
 	@echo ... windows/configuration/ConfigurationManager.obj
 	@echo ... windows/configuration/ConfigurationManager.i
 	@echo ... windows/configuration/ConfigurationManager.s
@@ -1222,6 +1297,9 @@ help:
 	@echo ... windows/service/main.obj
 	@echo ... windows/service/main.i
 	@echo ... windows/service/main.s
+	@echo ... windows/tests/AuthenticationLaboratoryTest.obj
+	@echo ... windows/tests/AuthenticationLaboratoryTest.i
+	@echo ... windows/tests/AuthenticationLaboratoryTest.s
 	@echo ... windows/tests/AuthenticationManagerTest.obj
 	@echo ... windows/tests/AuthenticationManagerTest.i
 	@echo ... windows/tests/AuthenticationManagerTest.s
@@ -1237,6 +1315,9 @@ help:
 	@echo ... windows/tests/DeterministicInteroperabilityTest.obj
 	@echo ... windows/tests/DeterministicInteroperabilityTest.i
 	@echo ... windows/tests/DeterministicInteroperabilityTest.s
+	@echo ... windows/tests/EndToEndUnlockTest.obj
+	@echo ... windows/tests/EndToEndUnlockTest.i
+	@echo ... windows/tests/EndToEndUnlockTest.s
 	@echo ... windows/tests/IPCTest.obj
 	@echo ... windows/tests/IPCTest.i
 	@echo ... windows/tests/IPCTest.s

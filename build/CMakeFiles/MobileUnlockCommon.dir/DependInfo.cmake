@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/authentication/AuthenticationManager.cpp" "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj" "gcc" "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/AuthenticationManager.cpp.obj.d"
+  "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/authentication/LsaPackageLookup.cpp" "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj" "gcc" "CMakeFiles/MobileUnlockCommon.dir/windows/authentication/LsaPackageLookup.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/configuration/ConfigurationManager.cpp" "CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.obj" "gcc" "CMakeFiles/MobileUnlockCommon.dir/windows/configuration/ConfigurationManager.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/credential_provider/ClassFactory.cpp" "CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.obj" "gcc" "CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/ClassFactory.cpp.obj.d"
   "C:/Users/AsadU/DRIVE_0/PC unlock/PC UNlock Project/windows/credential_provider/CredentialProvider.cpp" "CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj" "gcc" "CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider.cpp.obj.d"

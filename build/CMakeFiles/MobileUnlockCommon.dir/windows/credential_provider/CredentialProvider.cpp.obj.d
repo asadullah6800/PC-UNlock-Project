@@ -101,4 +101,5 @@ CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/CredentialProvider
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cerrno \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functional_hash.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hash_bytes.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\lsa_authentication_package\lsalogonbuffer.h

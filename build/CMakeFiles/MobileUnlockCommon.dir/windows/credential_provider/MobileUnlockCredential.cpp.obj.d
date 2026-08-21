@@ -101,6 +101,7 @@ CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCreden
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hash_bytes.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc \
  C:\Users\AsadU\DRIVE_0\PC\ unlock\PC\ UNlock\ Project\windows\credential_provider\ProviderGuid.h \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\lsa_authentication_package\lsalogonbuffer.h \
  c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\ipc\secureipc.h \
  c:\mingw\include\sddl.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
@@ -129,4 +130,6 @@ CMakeFiles/MobileUnlockCommon.dir/windows/credential_provider/MobileUnlockCreden
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_atomic.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h \
  c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\shared\protocol\protocoltypes.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstddef
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstddef \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\authentication\lsapackagelookup.h \
+ c:\users\asadu\drive_0\pc\ unlock\pc\ unlock\ project\windows\lsa_authentication_package\lsapackagecompat.h

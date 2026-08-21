@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj"
+  "CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationLaboratoryTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationManagerTest.cpp.obj"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/AuthenticationManagerTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/ConfigurationTest.cpp.obj"
@@ -9,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/CryptoManagerTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.obj"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/DeterministicInteroperabilityTest.cpp.obj.d"
+  "CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj"
+  "CMakeFiles/MobileUnlockTests.dir/windows/tests/EndToEndUnlockTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.obj"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/IPCTest.cpp.obj.d"
   "CMakeFiles/MobileUnlockTests.dir/windows/tests/LsaAuthenticationPackageTest.cpp.obj"
